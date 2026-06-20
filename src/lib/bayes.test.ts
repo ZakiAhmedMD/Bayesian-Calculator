@@ -5,7 +5,6 @@ import {
   likelihoodRatios,
   postTestProb,
   ppv,
-  npv,
   probDiseaseGivenNeg,
   naturalFrequencies,
   sequentialUpdate,

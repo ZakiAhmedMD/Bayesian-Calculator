@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-06-20",
+  "tests": [
+    {
+      "id": "pe-ddimer",
+      "diagnosis": "Pulmonary embolism",
+      "testName": "D-dimer (quantitative)",
+      "sensitivity": 0.97,
+      "specificity": 0.41,
+      "ci": { "sensLow": 0.96, "sensHigh": 0.98, "specLow": 0.36, "specHigh": 0.46 },
+      "condition": "Rule-out test in low / intermediate pre-test probability",
+      "typicalPretest": 0.15,
+      "verified": false,
+      "citation": {
+        "reference": "Patel P, et al. Systematic review and meta-analysis of test accuracy for the diagnosis of suspected pulmonary embolism. Blood Adv. 2020;4(18):4296-4311 (61 studies).",
+        "doi": "10.1182/bloodadvances.2019001052",
+        "pmid": "32915980",
+        "url": "https://doi.org/10.1182/bloodadvances.2019001052",
+        "sourceQuote": "The pooled estimates for D-dimer sensitivity and specificity were 0.97 (95% confidence interval [CI], 0.96-0.98) and 0.41 (95% CI, 0.36-0.46) respectively.",
+        "context": "Quantitative D-dimer; patients with suspected first/recurrent PE. Values vary by assay (ELISA vs latex vs whole-blood) and increase in specificity with age-adjusted thresholds.",
+        "notes": "High sensitivity / low specificity makes a NEGATIVE result a strong rule-out (low LR-). DOI/PMID must be re-verified by faculty before teaching use."
+      }
+    },
+    {
+      "id": "pe-cta",
+      "diagnosis": "Pulmonary embolism",
+      "testName": "CT pulmonary angiography (CTPA)",
+      "sensitivity": 0.94,
+      "specificity": 0.98,
+      "ci": { "sensLow": 0.89, "sensHigh": 0.97, "specLow": 0.97, "specHigh": 0.99 },
+      "condition": "Confirmatory imaging, typically after a positive D-dimer or high pre-test probability",
+      "typicalPretest": 0.5,
+      "verified": false,
+      "citation": {
+        "reference": "Patel P, et al. Systematic review and meta-analysis of test accuracy for the diagnosis of suspected pulmonary embolism. Blood Adv. 2020;4(18):4296-4311 (61 studies).",
+        "doi": "10.1182/bloodadvances.2019001052",
+        "pmid": "32915980",
+        "url": "https://doi.org/10.1182/bloodadvances.2019001052",
+        "sourceQuote": "CTPA sensitivity and specificity were 0.94 (95% CI, 0.89-0.97) and 0.98 (95% CI, 0.97-0.99), respectively.",
+        "context": "CT pulmonary angiography in suspected PE; performance depends on scanner generation and image quality.",
+        "notes": "High specificity makes a POSITIVE result strongly rule-in (high LR+)."
+      }
+    },
+    {
+      "id": "pe-cus",
+      "diagnosis": "Pulmonary embolism",
+      "testName": "Compression ultrasonography (lower-extremity)",
+      "sensitivity": 0.49,
+      "specificity": 0.96,
+      "ci": { "sensLow": 0.31, "sensHigh": 0.66, "specLow": 0.95, "specHigh": 0.98 },
+      "condition": "Indirect test for PE via detection of proximal DVT",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Patel P, et al. Systematic review and meta-analysis of test accuracy for the diagnosis of suspected pulmonary embolism. Blood Adv. 2020;4(18):4296-4311 (61 studies).",
+        "doi": "10.1182/bloodadvances.2019001052",
+        "pmid": "32915980",
+        "url": "https://doi.org/10.1182/bloodadvances.2019001052",
+        "sourceQuote": "CUS sensitivity and specificity were 0.49 (95% CI, 0.31-0.66) and 0.96 (95% CI, 0.95-0.98), respectively.",
+        "context": "Compression ultrasonography detects proximal DVT as a surrogate for PE; low sensitivity means a negative study does NOT exclude PE.",
+        "notes": "Illustrates a rule-in (not rule-out) test: high specificity, low sensitivity."
+      }
+    }
+  ],
+  "sequences": [
+    {
+      "id": "pe-workup",
+      "name": "PE: D-dimer → CTPA",
+      "diagnosis": "Pulmonary embolism",
+      "steps": ["pe-ddimer", "pe-cta"],
+      "stopNote": "In low/intermediate pre-test probability, a NEGATIVE high-sensitivity D-dimer typically ends the workup (PE excluded). CTPA is pursued when the D-dimer is positive or pre-test probability is high.",
+      "independenceNote": "D-dimer (a biomarker of fibrin turnover) and CTPA (direct imaging) probe different biology, so treating them as conditionally independent is a reasonable teaching approximation."
+    }
+  ]
+}
