@@ -1,0 +1,42 @@
+:root {
+  /* Palette */
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #1d4ed8;
+  --primary-soft: #dbeafe;
+
+  /* Diagnostic outcome colors (consistent across all visualizations) */
+  --disease: #dc2626; /* has disease */
+  --healthy: #2563eb; /* no disease */
+  --true-pos: #b91c1c;
+  --false-neg: #fca5a5;
+  --false-pos: #93c5fd;
+  --true-neg: #1e40af;
+
+  --warn-bg: #fef3c7;
+  --warn-border: #f59e0b;
+  --warn-text: #92400e;
+
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
