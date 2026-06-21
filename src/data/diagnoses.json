@@ -495,6 +495,85 @@
         "context": "HbA1c at the 6.5% diagnostic threshold vs OGTT in previously undiagnosed community adults. A lower cutoff (~6.0%) raises sensitivity at the cost of specificity.",
         "notes": "Striking teaching case: at 6.5%, HbA1c is highly specific (rules in) but misses ~half of OGTT-defined diabetes — a normal value does NOT exclude it. Verify before teaching use."
       }
+    },
+    {
+      "id": "pancreatitis-lipase",
+      "diagnosis": "Acute pancreatitis",
+      "testName": "Serum lipase (>3x upper limit of normal)",
+      "sensitivity": 0.79,
+      "specificity": 0.89,
+      "ci": { "sensLow": 0.54, "sensHigh": 0.92, "specLow": 0.46, "specHigh": 0.99 },
+      "condition": "ED patients with acute abdominal pain",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Rompianesi G, et al. Serum amylase and lipase and urinary trypsinogen and amylase for diagnosis of acute pancreatitis. Cochrane Database Syst Rev. 2017;(4):CD012010 (10 studies).",
+        "doi": "10.1002/14651858.CD012010.pub2",
+        "pmid": "28431198",
+        "url": "https://doi.org/10.1002/14651858.CD012010.pub2",
+        "sourceQuote": "...sensitivities (0.72 (95% CI 0.59 to 0.82); 0.79 (95% CI 0.54 to 0.92); and 0.72 (95% CI 0.56 to 0.84), respectively) and specificities (0.93 (95% CI 0.66 to 0.99); 0.89 (95% CI 0.46 to 0.99); and 0.90 (95% CI 0.85 to 0.93), respectively).",
+        "context": "Serum lipase at >3x ULN for acute pancreatitis in ED abdominal pain (the middle value of each parenthetical list is lipase). Data were sparse — note the very wide CIs; accuracy declines with time from onset.",
+        "notes": "~1 in 4 cases missed even with lipase >3x ULN; keep a low threshold to treat if symptoms fit. Verify before teaching use."
+      }
+    },
+    {
+      "id": "cirrhosis-te",
+      "diagnosis": "Cirrhosis (chronic hepatitis B)",
+      "testName": "Transient elastography (cutoff 11.7 kPa)",
+      "sensitivity": 0.846,
+      "specificity": 0.815,
+      "condition": "Staging F4 fibrosis in chronic hepatitis B (vs liver biopsy)",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Chon YE, et al. Performance of transient elastography for the staging of liver fibrosis in patients with chronic hepatitis B: a meta-analysis. PLoS One. 2012;7(9):e44930 (18 studies, 2772 patients).",
+        "doi": "10.1371/journal.pone.0044930",
+        "pmid": "23049764",
+        "url": "https://doi.org/10.1371/journal.pone.0044930",
+        "sourceQuote": "The cutoff value for F4 was 11.7 (range, 7.3-17.5) kPa, with a sensitivity of 84.6% and specificity of 81.5%.",
+        "context": "Transient elastography (FibroScan) for cirrhosis (F4) in chronic hepatitis B, cutoff ~11.7 kPa. Optimal cutoffs differ by etiology (hepatitis C, NAFLD).",
+        "notes": "Non-invasive alternative to biopsy; cutoff- and etiology-dependent. Verify before teaching use."
+      }
+    },
+    {
+      "id": "cushing-dst",
+      "diagnosis": "Cushing syndrome",
+      "testName": "Overnight 1-mg dexamethasone suppression test",
+      "sensitivity": 0.986,
+      "specificity": 0.906,
+      "ci": { "sensLow": 0.969, "sensHigh": 0.994, "specLow": 0.864, "specHigh": 0.936 },
+      "condition": "Screening adults for Cushing syndrome",
+      "typicalPretest": 0.1,
+      "verified": false,
+      "citation": {
+        "reference": "Galm BP, et al. Accuracy of laboratory tests for the diagnosis of Cushing syndrome. J Clin Endocrinol Metab. 2020;105(6):dgaa105 (139 studies, 14,140 participants).",
+        "doi": "10.1210/clinem/dgaa105",
+        "pmid": "32133504",
+        "url": "https://doi.org/10.1210/clinem/dgaa105",
+        "sourceQuote": "DST 98.6% (96.9%-99.4%), 90.6% (86.4%-93.6%), 10.5 (7.2-15.3), and 0.016 (0.007-0.035)",
+        "context": "Overnight 1-mg dexamethasone suppression test for Cushing syndrome (the values are sensitivity, then specificity, then LR+ and LR-). Late-night salivary cortisol and 24h urinary free cortisol have similar accuracy.",
+        "notes": "Very high sensitivity → excellent first-line rule-out; false positives occur (estrogen, CYP3A4 inducers, etc.). Verify before teaching use."
+      }
+    },
+    {
+      "id": "aldosteronism-arr",
+      "diagnosis": "Primary aldosteronism",
+      "testName": "Aldosterone-to-renin ratio (ARR)",
+      "sensitivity": 0.89,
+      "specificity": 0.96,
+      "ci": { "sensLow": 0.84, "sensHigh": 0.93, "specLow": 0.95, "specHigh": 0.98 },
+      "condition": "Screening hypertensive patients for primary aldosteronism",
+      "typicalPretest": 0.1,
+      "verified": false,
+      "citation": {
+        "reference": "Li X, et al. Aldosterone/direct renin concentration ratio as a screening test for primary aldosteronism: a meta-analysis. J Renin Angiotensin Aldosterone Syst. 2016;17(3) (9 studies, 974 patients).",
+        "doi": "10.1177/1470320316657450",
+        "pmid": "27534428",
+        "url": "https://doi.org/10.1177/1470320316657450",
+        "sourceQuote": "The overall sensitivity, specificity, area under the curve, and diagnostic odds ratio of ADRR were 0.89 (95% confidence interval (CI) 0.84-0.93), 0.96 (95% CI 0.95-0.98), 0.985 and 324 respectively, with substantial heterogeneity.",
+        "context": "Aldosterone/renin ratio screening for primary aldosteronism. CRITICAL: antihypertensive drugs interfere; off-treatment accuracy is higher (sens 0.99, spec 0.98).",
+        "notes": "Screening test; confirm positives with dynamic testing. Antihypertensives must be accounted for. Verify before teaching use."
+      }
     }
   ],
   "sequences": [
