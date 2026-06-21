@@ -65,6 +65,7 @@ add or correct an entry, copy an existing block and fill it in:
   "id": "unique-id",
   "diagnosis": "Heart failure",
   "testName": "BNP",
+  "setting": "Emergency department",
   "sensitivity": 0.95,
   "specificity": 0.63,
   "ci": { "sensLow": 0.93, "sensHigh": 0.96, "specLow": 0.6, "specHigh": 0.66 },
@@ -87,12 +88,17 @@ Notes:
 
 - `sensitivity` / `specificity` are **fractions strictly between 0 and 1** (use
   `0.95`, never the percent `95`).
+- `setting` is the care setting the accuracy data came from, one of
+  `"Emergency department"`, `"Inpatient/ICU"`, `"Outpatient"`, or `"Screening"`.
+  The app defaults to **acute only** (ED + inpatient/ICU) for admitting teams;
+  pick the setting that matches the **source study population**, not where the
+  test could theoretically be used.
 - `verified` defaults to `false`; flip it to `true` only after faculty
   verification.
 
 Rules enforced automatically (the app refuses to start otherwise): sens/spec in
-`(0, 1)`; a `citation` with `reference`, `sourceQuote`, and `context`; and a
-`verified` boolean.
+`(0, 1)`; a valid `setting`; a `citation` with `reference`, `sourceQuote`, and
+`context`; and a `verified` boolean.
 
 ### Sequence presets
 

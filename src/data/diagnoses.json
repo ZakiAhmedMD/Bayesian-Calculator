@@ -6,6 +6,7 @@
       "id": "pe-ddimer",
       "diagnosis": "Pulmonary embolism",
       "testName": "D-dimer (quantitative)",
+      "setting": "Emergency department",
       "sensitivity": 0.97,
       "specificity": 0.41,
       "ci": {
@@ -31,6 +32,7 @@
       "id": "pe-cta",
       "diagnosis": "Pulmonary embolism",
       "testName": "CT pulmonary angiography (CTPA)",
+      "setting": "Emergency department",
       "sensitivity": 0.94,
       "specificity": 0.98,
       "ci": {
@@ -56,6 +58,7 @@
       "id": "pe-cus",
       "diagnosis": "Pulmonary embolism",
       "testName": "Compression ultrasonography (lower-extremity)",
+      "setting": "Emergency department",
       "sensitivity": 0.49,
       "specificity": 0.96,
       "ci": {
@@ -81,6 +84,7 @@
       "id": "dvt-cus",
       "diagnosis": "Deep vein thrombosis",
       "testName": "Proximal compression ultrasonography",
+      "setting": "Emergency department",
       "sensitivity": 0.901,
       "specificity": 0.985,
       "ci": {
@@ -106,6 +110,7 @@
       "id": "dvt-ddimer",
       "diagnosis": "Deep vein thrombosis",
       "testName": "D-dimer (quantitative)",
+      "setting": "Emergency department",
       "sensitivity": 0.961,
       "specificity": 0.357,
       "ci": {
@@ -131,44 +136,53 @@
       "id": "hf-bnp",
       "diagnosis": "Heart failure",
       "testName": "BNP (B-type natriuretic peptide)",
-      "sensitivity": 0.8,
-      "specificity": 0.61,
-      "condition": "Suspected heart failure (optimal cutpoint)",
+      "setting": "Emergency department",
+      "sensitivity": 0.97,
+      "specificity": 0.7,
+      "ci": {
+        "sensLow": 0.96,
+        "sensHigh": 0.98,
+        "specLow": 0.56,
+        "specHigh": 0.85
+      },
+      "condition": "ED / acute-care patients with undifferentiated dyspnea (rule-out of acute HF)",
       "typicalPretest": 0.4,
       "verified": false,
       "citation": {
-        "reference": "Booth RA, et al. Performance of BNP and NT-proBNP for diagnosis of heart failure in primary care patients: a systematic review. Heart Fail Rev. 2014;19(4):439-451.",
-        "doi": "10.1007/s10741-014-9445-8",
-        "pmid": "24969534",
-        "url": "https://doi.org/10.1007/s10741-014-9445-8",
-        "sourceQuote": "Pooled sensitivity and specificity of BNP and NT-proBNP using the lowest [0.85 (sensitivity) and 0.54 (specificity)], optimal (0.80 and 0.61), and manufacturers' (0.74 and 0.67) cutpoints showed good performance for diagnosing HF.",
-        "context": "Primary-care populations; performance is cutpoint-dependent (values shown are the 'optimal' cutpoint). Specificity is lower and more variable than sensitivity.",
-        "notes": "Best used as a rule-out (high sensitivity at low thresholds). Acute-care thresholds differ; verify before teaching use."
+        "reference": "Worster A, et al. Diagnostic accuracy of BNP and NT-proBNP in patients presenting to acute care settings with dyspnea: a systematic review. Clin Biochem. 2008;41(4-5):250-259 (9 studies).",
+        "doi": "10.1016/j.clinbiochem.2007.08.008",
+        "pmid": "17915204",
+        "url": "https://doi.org/10.1016/j.clinbiochem.2007.08.008",
+        "sourceQuote": "The pooled estimates of sensitivity and specificity were the same for the BNP studies (0.97 (95% CI: 0.96, 0.98) and 0.70 (95% CI: 0.56, 0.85)) as for the NT-proBNP studies (0.95 (95% CI: 0.90, 1.01) and 0.72 (95% CI: 0.53, 0.90)).",
+        "context": "Patients presenting to acute-care / ED settings with dyspnea; BNP for diagnosing acute heart failure. High sensitivity, moderate specificity, with substantial between-study heterogeneity (I-squared ~98%) and no single optimal cut point.",
+        "notes": "Re-sourced to an acute-care (ED) population, replacing a primary-care meta-analysis — note the acute-care specificity (~0.70) differs from the primary-care figure. Best as a rule-out of acute HF in undifferentiated dyspnea. Verify before teaching use."
       }
     },
     {
       "id": "hf-ntprobnp",
       "diagnosis": "Heart failure",
       "testName": "NT-proBNP",
-      "sensitivity": 0.86,
-      "specificity": 0.58,
-      "condition": "Suspected heart failure (optimal cutpoint)",
+      "setting": "Emergency department",
+      "sensitivity": 0.95,
+      "specificity": 0.72,
+      "condition": "ED / acute-care patients with undifferentiated dyspnea (rule-out of acute HF)",
       "typicalPretest": 0.4,
       "verified": false,
       "citation": {
-        "reference": "Booth RA, et al. Performance of BNP and NT-proBNP for diagnosis of heart failure in primary care patients: a systematic review. Heart Fail Rev. 2014;19(4):439-451.",
-        "doi": "10.1007/s10741-014-9445-8",
-        "pmid": "24969534",
-        "url": "https://doi.org/10.1007/s10741-014-9445-8",
-        "sourceQuote": "Similar performance was seen for NT-proBNP: lowest (0.90 and 0.50), optimal (0.86 and 0.58), and manufacturers' (0.82 and 0.58) cutpoints.",
-        "context": "Primary-care populations; 'optimal' cutpoint shown. No statistically significant difference in accuracy vs BNP.",
-        "notes": "Rule-out test; threshold- and population-dependent. Verify before teaching use."
+        "reference": "Worster A, et al. Diagnostic accuracy of BNP and NT-proBNP in patients presenting to acute care settings with dyspnea: a systematic review. Clin Biochem. 2008;41(4-5):250-259 (9 studies).",
+        "doi": "10.1016/j.clinbiochem.2007.08.008",
+        "pmid": "17915204",
+        "url": "https://doi.org/10.1016/j.clinbiochem.2007.08.008",
+        "sourceQuote": "The pooled estimates of sensitivity and specificity were the same for the BNP studies (0.97 (95% CI: 0.96, 0.98) and 0.70 (95% CI: 0.56, 0.85)) as for the NT-proBNP studies (0.95 (95% CI: 0.90, 1.01) and 0.72 (95% CI: 0.53, 0.90)).",
+        "context": "Patients presenting to acute-care / ED settings with dyspnea; NT-proBNP for acute heart failure. Pooled sensitivity 0.95 (95% CI 0.90-1.01; upper bound exceeds 1 due to the meta-analytic method, so no CI is displayed) and specificity 0.72 (0.53-0.90); high heterogeneity.",
+        "notes": "Re-sourced to an acute-care (ED) population. Comparable to BNP; a rule-out test for acute HF. Verify before teaching use."
       }
     },
     {
       "id": "mi-hstroponin",
       "diagnosis": "Acute myocardial infarction",
       "testName": "High-sensitivity troponin (ESC 0/1-hour algorithm)",
+      "setting": "Emergency department",
       "sensitivity": 0.99,
       "specificity": 0.91,
       "ci": {
@@ -194,6 +208,7 @@
       "id": "strep-radt",
       "diagnosis": "Streptococcal pharyngitis",
       "testName": "Rapid antigen detection test (RADT)",
+      "setting": "Outpatient",
       "sensitivity": 0.856,
       "specificity": 0.954,
       "ci": {
@@ -219,6 +234,7 @@
       "id": "celiac-ttg",
       "diagnosis": "Celiac disease",
       "testName": "Anti-tissue transglutaminase IgA (tTG-IgA)",
+      "setting": "Outpatient",
       "sensitivity": 0.907,
       "specificity": 0.874,
       "ci": {
@@ -244,6 +260,7 @@
       "id": "ra-anticcp",
       "diagnosis": "Rheumatoid arthritis",
       "testName": "Anti-CCP (anti-cyclic citrullinated peptide-2)",
+      "setting": "Outpatient",
       "sensitivity": 0.719,
       "specificity": 0.96,
       "ci": {
@@ -269,6 +286,7 @@
       "id": "flu-ridt",
       "diagnosis": "Influenza",
       "testName": "Rapid influenza diagnostic test (traditional RIDT)",
+      "setting": "Emergency department",
       "sensitivity": 0.544,
       "specificity": 0.98,
       "condition": "Suspected influenza A (vs RT-PCR)",
@@ -288,6 +306,7 @@
       "id": "pheo-nmn",
       "diagnosis": "Pheochromocytoma / paraganglioma",
       "testName": "Plasma free normetanephrine",
+      "setting": "Outpatient",
       "sensitivity": 0.97,
       "specificity": 0.97,
       "ci": {
@@ -313,6 +332,7 @@
       "id": "sle-ana",
       "diagnosis": "Systemic lupus erythematosus",
       "testName": "Antinuclear antibody (ANA) by indirect immunofluorescence",
+      "setting": "Outpatient",
       "sensitivity": 0.952,
       "specificity": 0.833,
       "condition": "Suspected SLE (vs systemic rheumatic disease and healthy controls)",
@@ -332,6 +352,7 @@
       "id": "bacteremia-pct",
       "diagnosis": "Bacteremia",
       "testName": "Procalcitonin (cutoff 0.5 ng/mL)",
+      "setting": "Inpatient/ICU",
       "sensitivity": 0.76,
       "specificity": 0.69,
       "condition": "Adults suspected of infection / sepsis (vs blood cultures)",
@@ -351,6 +372,7 @@
       "id": "tb-xpert",
       "diagnosis": "Pulmonary tuberculosis",
       "testName": "Xpert MTB/RIF (sputum nucleic acid amplification)",
+      "setting": "Inpatient/ICU",
       "sensitivity": 0.85,
       "specificity": 0.98,
       "ci": {
@@ -376,6 +398,7 @@
       "id": "gca-us",
       "diagnosis": "Giant cell arteritis",
       "testName": "Temporal artery ultrasound (halo sign)",
+      "setting": "Outpatient",
       "sensitivity": 0.75,
       "specificity": 0.83,
       "ci": {
@@ -401,6 +424,7 @@
       "id": "aad-ddimer",
       "diagnosis": "Acute aortic dissection",
       "testName": "D-dimer (cutoff 500 ng/mL)",
+      "setting": "Emergency department",
       "sensitivity": 0.952,
       "specificity": 0.604,
       "ci": {
@@ -426,6 +450,7 @@
       "id": "hpylori-ubt",
       "diagnosis": "Helicobacter pylori infection",
       "testName": "Urea breath test (13C)",
+      "setting": "Outpatient",
       "sensitivity": 0.94,
       "specificity": 0.9,
       "condition": "Suspected H. pylori, off PPIs/antibiotics (vs histopathology)",
@@ -445,6 +470,7 @@
       "id": "meningitis-csflactate",
       "diagnosis": "Bacterial meningitis",
       "testName": "CSF lactate (cutoff ~35 mg/dL)",
+      "setting": "Emergency department",
       "sensitivity": 0.93,
       "specificity": 0.96,
       "ci": {
@@ -470,6 +496,7 @@
       "id": "acpe-lus",
       "diagnosis": "Acute cardiogenic pulmonary edema",
       "testName": "Lung ultrasound (B-lines)",
+      "setting": "Emergency department",
       "sensitivity": 0.941,
       "specificity": 0.924,
       "ci": {
@@ -495,6 +522,7 @@
       "id": "appendicitis-ct",
       "diagnosis": "Acute appendicitis",
       "testName": "Abdominopelvic CT",
+      "setting": "Emergency department",
       "sensitivity": 0.95,
       "specificity": 0.94,
       "ci": {
@@ -520,6 +548,7 @@
       "id": "ibd-calprotectin",
       "diagnosis": "Inflammatory bowel disease",
       "testName": "Fecal calprotectin",
+      "setting": "Outpatient",
       "sensitivity": 0.88,
       "specificity": 0.72,
       "ci": {
@@ -545,6 +574,7 @@
       "id": "aspergillosis-gm",
       "diagnosis": "Invasive aspergillosis",
       "testName": "Serum galactomannan (ODI ≥0.5)",
+      "setting": "Inpatient/ICU",
       "sensitivity": 0.82,
       "specificity": 0.81,
       "ci": {
@@ -570,6 +600,7 @@
       "id": "diabetes-hba1c",
       "diagnosis": "Type 2 diabetes",
       "testName": "HbA1c ≥ 6.5% (venous)",
+      "setting": "Screening",
       "sensitivity": 0.5,
       "specificity": 0.973,
       "ci": {
@@ -595,6 +626,7 @@
       "id": "pancreatitis-lipase",
       "diagnosis": "Acute pancreatitis",
       "testName": "Serum lipase (>3x upper limit of normal)",
+      "setting": "Emergency department",
       "sensitivity": 0.79,
       "specificity": 0.89,
       "ci": {
@@ -620,6 +652,7 @@
       "id": "cirrhosis-te",
       "diagnosis": "Cirrhosis (chronic hepatitis B)",
       "testName": "Transient elastography (cutoff 11.7 kPa)",
+      "setting": "Outpatient",
       "sensitivity": 0.846,
       "specificity": 0.815,
       "condition": "Staging F4 fibrosis in chronic hepatitis B (vs liver biopsy)",
@@ -639,6 +672,7 @@
       "id": "cushing-dst",
       "diagnosis": "Cushing syndrome",
       "testName": "Overnight 1-mg dexamethasone suppression test",
+      "setting": "Outpatient",
       "sensitivity": 0.986,
       "specificity": 0.906,
       "ci": {
@@ -664,6 +698,7 @@
       "id": "aldosteronism-arr",
       "diagnosis": "Primary aldosteronism",
       "testName": "Aldosterone-to-renin ratio (ARR)",
+      "setting": "Outpatient",
       "sensitivity": 0.89,
       "specificity": 0.96,
       "ci": {
@@ -689,6 +724,7 @@
       "id": "tbpleuritis-ada",
       "diagnosis": "Tuberculous pleural effusion",
       "testName": "Pleural fluid adenosine deaminase (ADA)",
+      "setting": "Inpatient/ICU",
       "sensitivity": 0.88,
       "specificity": 0.88,
       "ci": {
@@ -714,6 +750,7 @@
       "id": "crc-fit",
       "diagnosis": "Colorectal cancer",
       "testName": "Fecal immunochemical test (FIT)",
+      "setting": "Screening",
       "sensitivity": 0.79,
       "specificity": 0.94,
       "ci": {
@@ -739,6 +776,7 @@
       "id": "sah-ncct-6h",
       "diagnosis": "Aneurysmal subarachnoid hemorrhage",
       "testName": "Non-contrast cranial CT (modern multidetector, within 6 hours of onset)",
+      "setting": "Emergency department",
       "sensitivity": 0.987,
       "specificity": 0.999,
       "ci": {
@@ -764,6 +802,7 @@
       "id": "cad-ccta-patient",
       "diagnosis": "Coronary artery disease (obstructive, ≥50% stenosis)",
       "testName": "Coronary CT angiography (64-slice, patient-based)",
+      "setting": "Outpatient",
       "sensitivity": 0.99,
       "specificity": 0.89,
       "condition": "Adults with suspected or known CAD; 64-slice CT angiography vs invasive coronary angiography, ≥50% stenosis threshold, patient-based detection",
@@ -783,6 +822,7 @@
       "id": "cholecystitis-hida",
       "diagnosis": "Acute cholecystitis",
       "testName": "Hepatobiliary scintigraphy (cholescintigraphy / HIDA)",
+      "setting": "Emergency department",
       "sensitivity": 0.91,
       "specificity": 0.63,
       "ci": {
@@ -808,6 +848,7 @@
       "id": "cholecystitis-ruq-us",
       "diagnosis": "Acute cholecystitis",
       "testName": "Right-upper-quadrant ultrasound",
+      "setting": "Emergency department",
       "sensitivity": 0.69,
       "specificity": 0.79,
       "ci": {
@@ -833,6 +874,7 @@
       "id": "pneumococcal-uat",
       "diagnosis": "Pneumococcal pneumonia",
       "testName": "Urinary antigen test (pneumococcal)",
+      "setting": "Inpatient/ICU",
       "sensitivity": 0.66,
       "specificity": 0.9,
       "ci": {
@@ -858,6 +900,7 @@
       "id": "cad-exercise-ecg",
       "diagnosis": "Coronary artery disease (significant, ≥50% stenosis)",
       "testName": "Exercise treadmill ECG (XECG)",
+      "setting": "Outpatient",
       "sensitivity": 0.67,
       "specificity": 0.46,
       "ci": {
@@ -883,6 +926,7 @@
       "id": "pad-abi",
       "diagnosis": "Peripheral arterial disease",
       "testName": "Ankle-brachial index (ABI ≤ 0.90)",
+      "setting": "Outpatient",
       "sensitivity": 0.75,
       "specificity": 0.86,
       "condition": "Adults evaluated for lower-extremity PAD; ABI ≤ 0.90 vs angiography",
@@ -902,6 +946,7 @@
       "id": "breast-cancer-mammography",
       "diagnosis": "Breast cancer",
       "testName": "Screening mammography",
+      "setting": "Screening",
       "sensitivity": 0.81,
       "specificity": 0.96,
       "ci": {
@@ -927,6 +972,7 @@
       "id": "prostate-cancer-psa-4",
       "diagnosis": "Prostate cancer",
       "testName": "Prostate-specific antigen (PSA, cutoff 4 ng/mL)",
+      "setting": "Screening",
       "sensitivity": 0.92,
       "specificity": 0.16,
       "condition": "Men in a hospital setting evaluated for prostate cancer; PSA cutoff below 4 ng/mL vs biopsy reference standard",
@@ -946,6 +992,7 @@
       "id": "ra-rheumatoid-factor",
       "diagnosis": "Rheumatoid arthritis",
       "testName": "Rheumatoid factor (IgM RF)",
+      "setting": "Outpatient",
       "sensitivity": 0.69,
       "specificity": 0.85,
       "ci": {
@@ -971,6 +1018,7 @@
       "id": "carotid-stenosis-duplex",
       "diagnosis": "Carotid stenosis (≥70%, NASCET)",
       "testName": "Carotid duplex ultrasonography (PSV ≥200 cm/s)",
+      "setting": "Outpatient",
       "sensitivity": 0.9,
       "specificity": 0.94,
       "ci": {
@@ -996,6 +1044,7 @@
       "id": "ms-csf-oligoclonal-bands",
       "diagnosis": "Multiple sclerosis",
       "testName": "CSF oligoclonal bands (OCB)",
+      "setting": "Outpatient",
       "sensitivity": 0.85,
       "specificity": 0.92,
       "condition": "Patients with clinically isolated syndrome or suspected MS; CSF oligoclonal IgG bands discriminating CIS/MS from control subjects",
@@ -1015,6 +1064,7 @@
       "id": "crypto-crag",
       "diagnosis": "Cryptococcal meningitis",
       "testName": "Serum cryptococcal antigen (CrAg)",
+      "setting": "Inpatient/ICU",
       "sensitivity": 0.997,
       "specificity": 0.941,
       "ci": {
@@ -1040,6 +1090,7 @@
       "id": "ifd-bdg",
       "diagnosis": "Invasive fungal disease",
       "testName": "Serum (1->3)-beta-D-glucan",
+      "setting": "Inpatient/ICU",
       "sensitivity": 0.76,
       "specificity": 0.85,
       "ci": {
@@ -1065,6 +1116,7 @@
       "id": "malaria-rdt",
       "diagnosis": "Falciparum malaria",
       "testName": "Rapid diagnostic test (HRP-2 antigen)",
+      "setting": "Emergency department",
       "sensitivity": 0.948,
       "specificity": 0.952,
       "ci": {
@@ -1090,6 +1142,7 @@
       "id": "dengue-rdt",
       "diagnosis": "Dengue",
       "testName": "Rapid immunochromatographic test (NS1 + IgM/IgG)",
+      "setting": "Emergency department",
       "sensitivity": 0.9,
       "specificity": 0.89,
       "ci": {
@@ -1115,6 +1168,7 @@
       "id": "hpylori-sat",
       "diagnosis": "Helicobacter pylori infection",
       "testName": "Monoclonal stool antigen test (pre-treatment)",
+      "setting": "Outpatient",
       "sensitivity": 0.94,
       "specificity": 0.97,
       "ci": {
@@ -1140,6 +1194,7 @@
       "id": "aaa-pocus",
       "diagnosis": "Abdominal aortic aneurysm",
       "testName": "Point-of-care ultrasound",
+      "setting": "Emergency department",
       "sensitivity": 0.978,
       "specificity": 0.97,
       "condition": "ED patients suspected of ruptured AAA (PoCUS detects the aneurysm, not rupture)",
@@ -1159,6 +1214,7 @@
       "id": "bal-galactomannan",
       "diagnosis": "Invasive pulmonary aspergillosis",
       "testName": "BAL fluid galactomannan",
+      "setting": "Inpatient/ICU",
       "sensitivity": 0.79,
       "specificity": 0.92,
       "ci": {

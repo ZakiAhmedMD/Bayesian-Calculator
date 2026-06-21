@@ -25,4 +25,12 @@ describe("App", () => {
     expect(html).toContain("22.5%");
     expect(html).toContain("1.3%");
   });
+
+  it("shows the acute-care filter and the selected test's setting badge", () => {
+    const html = renderToStaticMarkup(<App />);
+    expect(html).toContain("Acute care only");
+    // PE D-dimer is tagged "Emergency department" → short badge "ED"
+    expect(html).toContain("ED");
+    expect(html).toContain("Emergency department");
+  });
 });

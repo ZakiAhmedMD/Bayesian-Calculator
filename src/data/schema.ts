@@ -29,10 +29,20 @@ export const Citation = z.object({
   notes: z.string().optional(),
 });
 
+/** Care setting of the source population — drives the acute-care filter and tag. */
+export const CareSetting = z.enum([
+  "Emergency department",
+  "Inpatient/ICU",
+  "Outpatient",
+  "Screening",
+]);
+
 export const TestEntry = z.object({
   id: z.string().min(1),
   diagnosis: z.string().min(1),
   testName: z.string().min(1),
+  /** Care setting the accuracy data was drawn from (admitting teams filter to acute). */
+  setting: CareSetting,
   sensitivity: z.number().gt(0).lt(1),
   specificity: z.number().gt(0).lt(1),
   ci: ConfidenceInterval.optional(),
@@ -87,6 +97,7 @@ export const DataFile = z
   });
 
 export type ConfidenceInterval = z.infer<typeof ConfidenceInterval>;
+export type CareSetting = z.infer<typeof CareSetting>;
 export type Citation = z.infer<typeof Citation>;
 export type TestEntry = z.infer<typeof TestEntry>;
 export type SequencePreset = z.infer<typeof SequencePreset>;
@@ -103,10 +114,28 @@ export const sequences = data.sequences;
 /** Whether every shipped test entry has been clinician-verified. */
 export const allVerified = tests.every((t) => t.verified);
 
-/** Tests grouped by diagnosis (insertion order preserved), for the picker. */
-export function testsByDiagnosis(): Map<string, TestEntry[]> {
+/** Acute-care settings (ED + inpatient/ICU) — the admitting-team default. */
+export const ACUTE_SETTINGS: CareSetting[] = [
+  "Emergency department",
+  "Inpatient/ICU",
+];
+export const isAcute = (t: TestEntry): boolean =>
+  ACUTE_SETTINGS.includes(t.setting);
+
+/** Short label for a care setting, for badges/tags. */
+export const settingShort = (s: CareSetting): string =>
+  s === "Emergency department" ? "ED" : s === "Inpatient/ICU" ? "Inpatient·ICU" : s;
+
+/**
+ * Tests grouped by diagnosis (insertion order preserved), for the picker.
+ * Pass a predicate (e.g. `isAcute`) to limit the result.
+ */
+export function testsByDiagnosis(
+  filter?: (t: TestEntry) => boolean,
+): Map<string, TestEntry[]> {
   const map = new Map<string, TestEntry[]>();
   for (const t of tests) {
+    if (filter && !filter(t)) continue;
     const list = map.get(t.diagnosis) ?? [];
     list.push(t);
     map.set(t.diagnosis, list);

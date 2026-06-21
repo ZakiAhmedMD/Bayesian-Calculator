@@ -5,6 +5,7 @@ const validEntry = {
   id: "x",
   diagnosis: "Disease",
   testName: "Test",
+  setting: "Emergency department",
   sensitivity: 0.9,
   specificity: 0.8,
   verified: false,

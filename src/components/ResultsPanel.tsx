@@ -1,4 +1,4 @@
-import type { TestEntry } from "../data/schema";
+import { isAcute, settingShort, type TestEntry } from "../data/schema";
 import type { Derived } from "../lib/compute";
 import { pct, lr } from "../lib/format";
 
@@ -24,6 +24,18 @@ export default function ResultsPanel({ test, d }: Props) {
 
   return (
     <section className="results" aria-label="Results">
+      <div className="results__head">
+        <span className="results__test">
+          {test.diagnosis} — {test.testName}
+        </span>
+        <span
+          className={`badge badge--setting ${isAcute(test) ? "setting--acute" : "setting--nonacute"}`}
+          title={`Accuracy data drawn from a ${test.setting} population`}
+        >
+          {settingShort(test.setting)}
+        </span>
+      </div>
+
       <div className="results__branches">
         <div className="branch branch--pos">
           <div className="branch__tag">If test POSITIVE</div>
