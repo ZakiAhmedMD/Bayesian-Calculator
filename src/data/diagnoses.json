@@ -219,6 +219,25 @@
         "context": "Anti-CCP-2 assay for known/suspected RA. High specificity, moderate sensitivity.",
         "notes": "Classic rule-in test (high specificity); a negative result does not exclude RA. Verify before teaching use."
       }
+    },
+    {
+      "id": "flu-ridt",
+      "diagnosis": "Influenza",
+      "testName": "Rapid influenza diagnostic test (traditional RIDT)",
+      "sensitivity": 0.544,
+      "specificity": 0.98,
+      "condition": "Suspected influenza A (vs RT-PCR)",
+      "typicalPretest": 0.25,
+      "verified": false,
+      "citation": {
+        "reference": "Merckx J, et al. Diagnostic accuracy of novel and traditional rapid tests for influenza infection compared with RT-PCR: a systematic review and meta-analysis. Ann Intern Med. 2017;167(6):394-409 (162 studies).",
+        "doi": "10.7326/M17-0848",
+        "pmid": "28869986",
+        "url": "https://doi.org/10.7326/M17-0848",
+        "sourceQuote": "Pooled sensitivities for detecting influenza A ... were 54.4% (95% credible interval [CrI], 48.9% to 59.8%) for RIDTs ... Pooled specificities were uniformly high (>98%).",
+        "context": "Traditional RIDT vs RT-PCR, influenza A. Specificity uniformly >98% (0.98 used as the stated floor; no precise spec interval reported). Sensitivity is higher in children and far higher for digital immunoassays and rapid NAATs.",
+        "notes": "The textbook low-sensitivity / high-specificity test: a POSITIVE rules in, but a NEGATIVE does NOT rule out influenza. Sensitivity CrI 48.9-59.8%. Verify before teaching use."
+      }
     }
   ],
   "sequences": [
