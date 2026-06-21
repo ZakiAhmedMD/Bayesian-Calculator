@@ -12,10 +12,10 @@ import { pct, lr as fmtLr } from "../lib/format";
  *
  * For the line's crossing point on the (mid-positioned) LR axis to depend only
  * on the LR and not on the pre-test value, the pre-test axis must be oriented
- * OPPOSITE to the post-test axis. With
- *     yPre(p)  = cy − S·logit(p)        (high probability at the TOP-left)
- *     yPost(q) = cy + S·logit(q)        (high probability at the BOTTOM-right)
- * the midpoint is  cy + (S/2)·ln(LR)  — exactly the LR axis mapping. QED.
+ * OPPOSITE to the post-test axis. Using the canonical textbook orientation,
+ *     yPre(p)  = cy + S·logit(p)        (pre-test 0.1 top → 99 bottom)
+ *     yPost(q) = cy − S·logit(q)        (post-test mirrored, 99 top → 0.1 bottom)
+ * the midpoint is  cy − (S/2)·ln(LR)  — exactly the LR axis mapping. QED.
  */
 
 const W = 360;
@@ -36,9 +36,13 @@ const LR_MAX = 1000;
 const logit = (p: number) => Math.log(p / (1 - p));
 const S = HALF / logit(P_MAX); // px per unit of log-odds
 
-const yPre = (p: number) => CY - S * logit(clamp(p, P_MIN, P_MAX));
-const yPost = (q: number) => CY + S * logit(clamp(q, P_MIN, P_MAX));
-const yLr = (v: number) => CY + (S / 2) * Math.log(clamp(v, LR_MIN, LR_MAX));
+// Canonical Fagan orientation: pre-test 0.1 (top) → 99 (bottom); post-test
+// mirrored, 99 (top) → 0.1 (bottom); LR 1000 (top) → 0.001 (bottom). The
+// opposite orientation of the two probability axes is what makes the line
+// cross the mid-positioned LR axis at a point that depends only on the LR.
+const yPre = (p: number) => CY + S * logit(clamp(p, P_MIN, P_MAX));
+const yPost = (q: number) => CY - S * logit(clamp(q, P_MIN, P_MAX));
+const yLr = (v: number) => CY - (S / 2) * Math.log(clamp(v, LR_MIN, LR_MAX));
 
 const PROB_TICKS = [
   0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5, 0.7, 0.8, 0.9,
