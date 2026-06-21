@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-06-20",
+  "lastUpdated": "2026-06-21",
   "tests": [
     {
       "id": "pe-ddimer",
@@ -8,7 +8,12 @@
       "testName": "D-dimer (quantitative)",
       "sensitivity": 0.97,
       "specificity": 0.41,
-      "ci": { "sensLow": 0.96, "sensHigh": 0.98, "specLow": 0.36, "specHigh": 0.46 },
+      "ci": {
+        "sensLow": 0.96,
+        "sensHigh": 0.98,
+        "specLow": 0.36,
+        "specHigh": 0.46
+      },
       "condition": "Rule-out test in low / intermediate pre-test probability",
       "typicalPretest": 0.15,
       "verified": false,
@@ -28,7 +33,12 @@
       "testName": "CT pulmonary angiography (CTPA)",
       "sensitivity": 0.94,
       "specificity": 0.98,
-      "ci": { "sensLow": 0.89, "sensHigh": 0.97, "specLow": 0.97, "specHigh": 0.99 },
+      "ci": {
+        "sensLow": 0.89,
+        "sensHigh": 0.97,
+        "specLow": 0.97,
+        "specHigh": 0.99
+      },
       "condition": "Confirmatory imaging, typically after a positive D-dimer or high pre-test probability",
       "typicalPretest": 0.5,
       "verified": false,
@@ -48,7 +58,12 @@
       "testName": "Compression ultrasonography (lower-extremity)",
       "sensitivity": 0.49,
       "specificity": 0.96,
-      "ci": { "sensLow": 0.31, "sensHigh": 0.66, "specLow": 0.95, "specHigh": 0.98 },
+      "ci": {
+        "sensLow": 0.31,
+        "sensHigh": 0.66,
+        "specLow": 0.95,
+        "specHigh": 0.98
+      },
       "condition": "Indirect test for PE via detection of proximal DVT",
       "typicalPretest": 0.2,
       "verified": false,
@@ -68,7 +83,12 @@
       "testName": "Proximal compression ultrasonography",
       "sensitivity": 0.901,
       "specificity": 0.985,
-      "ci": { "sensLow": 0.865, "sensHigh": 0.928, "specLow": 0.976, "specHigh": 0.991 },
+      "ci": {
+        "sensLow": 0.865,
+        "sensHigh": 0.928,
+        "specLow": 0.976,
+        "specHigh": 0.991
+      },
       "condition": "Suspected lower-extremity DVT",
       "typicalPretest": 0.2,
       "verified": false,
@@ -88,7 +108,12 @@
       "testName": "D-dimer (quantitative)",
       "sensitivity": 0.961,
       "specificity": 0.357,
-      "ci": { "sensLow": 0.926, "sensHigh": 0.98, "specLow": 0.295, "specHigh": 0.424 },
+      "ci": {
+        "sensLow": 0.926,
+        "sensHigh": 0.98,
+        "specLow": 0.295,
+        "specHigh": 0.424
+      },
       "condition": "Rule-out in low / intermediate pre-test probability",
       "typicalPretest": 0.2,
       "verified": false,
@@ -146,7 +171,12 @@
       "testName": "High-sensitivity troponin (ESC 0/1-hour algorithm)",
       "sensitivity": 0.99,
       "specificity": 0.91,
-      "ci": { "sensLow": 0.98, "sensHigh": 0.99, "specLow": 0.91, "specHigh": 0.92 },
+      "ci": {
+        "sensLow": 0.98,
+        "sensHigh": 0.99,
+        "specLow": 0.91,
+        "specHigh": 0.92
+      },
       "condition": "ED patients with suspected ACS without ST-elevation; serial 0h/1h algorithm",
       "typicalPretest": 0.15,
       "verified": false,
@@ -166,7 +196,12 @@
       "testName": "Rapid antigen detection test (RADT)",
       "sensitivity": 0.856,
       "specificity": 0.954,
-      "ci": { "sensLow": 0.833, "sensHigh": 0.876, "specLow": 0.945, "specHigh": 0.962 },
+      "ci": {
+        "sensLow": 0.833,
+        "sensHigh": 0.876,
+        "specLow": 0.945,
+        "specHigh": 0.962
+      },
       "condition": "Children with pharyngitis (vs throat culture)",
       "typicalPretest": 0.3,
       "verified": false,
@@ -186,7 +221,12 @@
       "testName": "Anti-tissue transglutaminase IgA (tTG-IgA)",
       "sensitivity": 0.907,
       "specificity": 0.874,
-      "ci": { "sensLow": 0.873, "sensHigh": 0.932, "specLow": 0.844, "specHigh": 0.9 },
+      "ci": {
+        "sensLow": 0.873,
+        "sensHigh": 0.932,
+        "specLow": 0.844,
+        "specHigh": 0.9
+      },
       "condition": "Adults, secondary care (vs duodenal biopsy)",
       "typicalPretest": 0.1,
       "verified": false,
@@ -206,7 +246,12 @@
       "testName": "Anti-CCP (anti-cyclic citrullinated peptide-2)",
       "sensitivity": 0.719,
       "specificity": 0.96,
-      "ci": { "sensLow": 0.699, "sensHigh": 0.739, "specLow": 0.953, "specHigh": 0.966 },
+      "ci": {
+        "sensLow": 0.699,
+        "sensHigh": 0.739,
+        "specLow": 0.953,
+        "specHigh": 0.966
+      },
       "condition": "Known or suspected rheumatoid arthritis",
       "typicalPretest": 0.2,
       "verified": false,
@@ -245,7 +290,12 @@
       "testName": "Plasma free normetanephrine",
       "sensitivity": 0.97,
       "specificity": 0.97,
-      "ci": { "sensLow": 0.94, "sensHigh": 0.98, "specLow": 0.92, "specHigh": 0.99 },
+      "ci": {
+        "sensLow": 0.94,
+        "sensHigh": 0.98,
+        "specLow": 0.92,
+        "specHigh": 0.99
+      },
       "condition": "Suspected PPGL (typically a low-prevalence screened population)",
       "typicalPretest": 0.05,
       "verified": false,
@@ -303,7 +353,12 @@
       "testName": "Xpert MTB/RIF (sputum nucleic acid amplification)",
       "sensitivity": 0.85,
       "specificity": 0.98,
-      "ci": { "sensLow": 0.82, "sensHigh": 0.88, "specLow": 0.97, "specHigh": 0.98 },
+      "ci": {
+        "sensLow": 0.82,
+        "sensHigh": 0.88,
+        "specLow": 0.97,
+        "specHigh": 0.98
+      },
       "condition": "Adults with presumptive pulmonary TB (vs culture)",
       "typicalPretest": 0.15,
       "verified": false,
@@ -323,7 +378,12 @@
       "testName": "Temporal artery ultrasound (halo sign)",
       "sensitivity": 0.75,
       "specificity": 0.83,
-      "ci": { "sensLow": 0.67, "sensHigh": 0.82, "specLow": 0.78, "specHigh": 0.88 },
+      "ci": {
+        "sensLow": 0.67,
+        "sensHigh": 0.82,
+        "specLow": 0.78,
+        "specHigh": 0.88
+      },
       "condition": "Suspected giant cell (temporal) arteritis (vs temporal artery biopsy)",
       "typicalPretest": 0.3,
       "verified": false,
@@ -343,7 +403,12 @@
       "testName": "D-dimer (cutoff 500 ng/mL)",
       "sensitivity": 0.952,
       "specificity": 0.604,
-      "ci": { "sensLow": 0.901, "sensHigh": 0.978, "specLow": 0.485, "specHigh": 0.712 },
+      "ci": {
+        "sensLow": 0.901,
+        "sensHigh": 0.978,
+        "specLow": 0.485,
+        "specHigh": 0.712
+      },
       "condition": "Suspected acute aortic syndrome (rule-out)",
       "typicalPretest": 0.15,
       "verified": false,
@@ -382,7 +447,12 @@
       "testName": "CSF lactate (cutoff ~35 mg/dL)",
       "sensitivity": 0.93,
       "specificity": 0.96,
-      "ci": { "sensLow": 0.89, "sensHigh": 0.96, "specLow": 0.93, "specHigh": 0.98 },
+      "ci": {
+        "sensLow": 0.89,
+        "sensHigh": 0.96,
+        "specLow": 0.93,
+        "specHigh": 0.98
+      },
       "condition": "Differentiating bacterial from aseptic meningitis",
       "typicalPretest": 0.3,
       "verified": false,
@@ -402,7 +472,12 @@
       "testName": "Lung ultrasound (B-lines)",
       "sensitivity": 0.941,
       "specificity": 0.924,
-      "ci": { "sensLow": 0.813, "sensHigh": 0.983, "specLow": 0.842, "specHigh": 0.964 },
+      "ci": {
+        "sensLow": 0.813,
+        "sensHigh": 0.983,
+        "specLow": 0.842,
+        "specHigh": 0.964
+      },
       "condition": "ED patients with acute dyspnea (point-of-care)",
       "typicalPretest": 0.4,
       "verified": false,
@@ -422,7 +497,12 @@
       "testName": "Abdominopelvic CT",
       "sensitivity": 0.95,
       "specificity": 0.94,
-      "ci": { "sensLow": 0.93, "sensHigh": 0.96, "specLow": 0.92, "specHigh": 0.95 },
+      "ci": {
+        "sensLow": 0.93,
+        "sensHigh": 0.96,
+        "specLow": 0.92,
+        "specHigh": 0.95
+      },
       "condition": "Adults with suspected appendicitis (add-on after clinical evaluation)",
       "typicalPretest": 0.4,
       "verified": false,
@@ -442,7 +522,12 @@
       "testName": "Fecal calprotectin",
       "sensitivity": 0.88,
       "specificity": 0.72,
-      "ci": { "sensLow": 0.8, "sensHigh": 0.93, "specLow": 0.59, "specHigh": 0.82 },
+      "ci": {
+        "sensLow": 0.8,
+        "sensHigh": 0.93,
+        "specLow": 0.59,
+        "specHigh": 0.82
+      },
       "condition": "Distinguishing IBD from functional GI disorders (e.g. IBS)",
       "typicalPretest": 0.2,
       "verified": false,
@@ -462,7 +547,12 @@
       "testName": "Serum galactomannan (ODI ≥0.5)",
       "sensitivity": 0.82,
       "specificity": 0.81,
-      "ci": { "sensLow": 0.73, "sensHigh": 0.9, "specLow": 0.72, "specHigh": 0.9 },
+      "ci": {
+        "sensLow": 0.73,
+        "sensHigh": 0.9,
+        "specLow": 0.72,
+        "specHigh": 0.9
+      },
       "condition": "Immunocompromised / neutropenic patients (vs EORTC/MSG criteria)",
       "typicalPretest": 0.1,
       "verified": false,
@@ -482,7 +572,12 @@
       "testName": "HbA1c ≥ 6.5% (venous)",
       "sensitivity": 0.5,
       "specificity": 0.973,
-      "ci": { "sensLow": 0.42, "sensHigh": 0.59, "specLow": 0.953, "specHigh": 0.984 },
+      "ci": {
+        "sensLow": 0.42,
+        "sensHigh": 0.59,
+        "specLow": 0.953,
+        "specHigh": 0.984
+      },
       "condition": "Screening previously undiagnosed adults (vs OGTT)",
       "typicalPretest": 0.1,
       "verified": false,
@@ -502,7 +597,12 @@
       "testName": "Serum lipase (>3x upper limit of normal)",
       "sensitivity": 0.79,
       "specificity": 0.89,
-      "ci": { "sensLow": 0.54, "sensHigh": 0.92, "specLow": 0.46, "specHigh": 0.99 },
+      "ci": {
+        "sensLow": 0.54,
+        "sensHigh": 0.92,
+        "specLow": 0.46,
+        "specHigh": 0.99
+      },
       "condition": "ED patients with acute abdominal pain",
       "typicalPretest": 0.3,
       "verified": false,
@@ -541,7 +641,12 @@
       "testName": "Overnight 1-mg dexamethasone suppression test",
       "sensitivity": 0.986,
       "specificity": 0.906,
-      "ci": { "sensLow": 0.969, "sensHigh": 0.994, "specLow": 0.864, "specHigh": 0.936 },
+      "ci": {
+        "sensLow": 0.969,
+        "sensHigh": 0.994,
+        "specLow": 0.864,
+        "specHigh": 0.936
+      },
       "condition": "Screening adults for Cushing syndrome",
       "typicalPretest": 0.1,
       "verified": false,
@@ -561,7 +666,12 @@
       "testName": "Aldosterone-to-renin ratio (ARR)",
       "sensitivity": 0.89,
       "specificity": 0.96,
-      "ci": { "sensLow": 0.84, "sensHigh": 0.93, "specLow": 0.95, "specHigh": 0.98 },
+      "ci": {
+        "sensLow": 0.84,
+        "sensHigh": 0.93,
+        "specLow": 0.95,
+        "specHigh": 0.98
+      },
       "condition": "Screening hypertensive patients for primary aldosteronism",
       "typicalPretest": 0.1,
       "verified": false,
@@ -574,6 +684,332 @@
         "context": "Aldosterone/renin ratio screening for primary aldosteronism. CRITICAL: antihypertensive drugs interfere; off-treatment accuracy is higher (sens 0.99, spec 0.98).",
         "notes": "Screening test; confirm positives with dynamic testing. Antihypertensives must be accounted for. Verify before teaching use."
       }
+    },
+    {
+      "id": "tbpleuritis-ada",
+      "diagnosis": "Tuberculous pleural effusion",
+      "testName": "Pleural fluid adenosine deaminase (ADA)",
+      "sensitivity": 0.88,
+      "specificity": 0.88,
+      "ci": {
+        "sensLow": 0.86,
+        "sensHigh": 0.9,
+        "specLow": 0.86,
+        "specHigh": 0.9
+      },
+      "condition": "Lymphocytic pleural effusion (TB-endemic settings)",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Palma RM, et al. Diagnostic accuracy of pleural fluid adenosine deaminase for diagnosing tuberculosis. Arch Bronconeumol. 2019;55(1):23-30.",
+        "doi": "10.1016/j.arbres.2018.05.007",
+        "pmid": "30612601",
+        "url": "https://doi.org/10.1016/j.arbres.2018.05.007",
+        "sourceQuote": "In 73 studies from non-Spanish populations a trend toward lower ADA sensitivity (88%, 95% CI:86%-90%) and specificity (88%, 95% CI: 86%-90%) was noted",
+        "context": "Pleural fluid ADA for tuberculous pleuritis (pooled non-Spanish populations; the Spanish subset was 93%/92%). Most useful where TB prevalence is high; cutoff- and population-dependent.",
+        "notes": "Good rule-in for TB pleuritis in endemic settings; lower pre-test probability reduces PPV. Verify before teaching use."
+      }
+    },
+    {
+      "id": "crc-fit",
+      "diagnosis": "Colorectal cancer",
+      "testName": "Fecal immunochemical test (FIT)",
+      "sensitivity": 0.79,
+      "specificity": 0.94,
+      "ci": {
+        "sensLow": 0.69,
+        "sensHigh": 0.86,
+        "specLow": 0.92,
+        "specHigh": 0.95
+      },
+      "condition": "Asymptomatic, average-risk adults screened for colorectal cancer (colonoscopy/follow-up reference standard)",
+      "typicalPretest": 0.01,
+      "verified": false,
+      "citation": {
+        "reference": "Lee JK, Liles EG, Bent S, Levin TR, Corley DA. Accuracy of fecal immunochemical tests for colorectal cancer: systematic review and meta-analysis. Ann Intern Med. 2014;160(3):171.",
+        "pmid": "24658694",
+        "doi": "10.7326/M13-1484",
+        "url": "https://doi.org/10.7326/M13-1484",
+        "sourceQuote": "The pooled sensitivity, specificity, positive likelihood ratio, and negative likelihood ratio of FITs for CRC were 0.79 (95% CI, 0.69 to 0.86), 0.94 (CI, 0.92 to 0.95), 13.10 (CI, 10.49 to 16.35), 0.23 (CI, 0.15 to 0.33), respectively, with an overall diagnostic accuracy of 95% (CI, 93% to 97%).",
+        "context": "19 studies; FITs for detecting CRC in asymptomatic average-risk adults; sensitivity improves with lower assay cutoff values.",
+        "notes": "Highly specific, moderately sensitive: a positive FIT meaningfully raises CRC probability (rule-in for further workup), but a single negative FIT does not exclude CRC. Performance is cutoff-dependent."
+      }
+    },
+    {
+      "id": "sah-ncct-6h",
+      "diagnosis": "Aneurysmal subarachnoid hemorrhage",
+      "testName": "Non-contrast cranial CT (modern multidetector, within 6 hours of onset)",
+      "sensitivity": 0.987,
+      "specificity": 0.999,
+      "ci": {
+        "sensLow": 0.971,
+        "sensHigh": 0.994,
+        "specLow": 0.993,
+        "specHigh": 1.0
+      },
+      "condition": "Neurologically intact adults presenting with thunderclap headache; non-contrast CT (16-slice or greater) performed within 6 hours of headache onset",
+      "typicalPretest": 0.075,
+      "verified": false,
+      "citation": {
+        "reference": "Dubosh NM, Bellolio MF, Rabinstein AA, Edlow JA. Sensitivity of Early Brain Computed Tomography to Exclude Aneurysmal Subarachnoid Hemorrhage: A Systematic Review and Meta-Analysis. Stroke. 2016;47(3):750-5.",
+        "pmid": "26797666",
+        "doi": "10.1161/STROKEAHA.115.011386",
+        "url": "https://doi.org/10.1161/STROKEAHA.115.011386",
+        "sourceQuote": "Overall sensitivity of the CT was 0.987 (95% confidence intervals, 0.971-0.994) and specificity was 0.999 (95% confidence intervals, 0.993-1.0).",
+        "context": "5 studies, ~8907 patients; modern-generation multidetector CT within 6 hours of symptom onset in neurologically intact patients.",
+        "notes": "Time-critical: extremely sensitive (good rule-out) ONLY when performed within 6 hours of headache onset and read by a qualified radiologist. Sensitivity falls substantially (≤90%) beyond 6 hours, where lumbar puncture/CTA is still considered."
+      }
+    },
+    {
+      "id": "cad-ccta-patient",
+      "diagnosis": "Coronary artery disease (obstructive, ≥50% stenosis)",
+      "testName": "Coronary CT angiography (64-slice, patient-based)",
+      "sensitivity": 0.99,
+      "specificity": 0.89,
+      "condition": "Adults with suspected or known CAD; 64-slice CT angiography vs invasive coronary angiography, ≥50% stenosis threshold, patient-based detection",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Mowatt G, Cook JA, Hillis GS, Walker S, Fraser C, Jia X, Waugh N. 64-Slice computed tomography angiography in the diagnosis and assessment of coronary artery disease: systematic review and meta-analysis. Heart. 2008;94(11):1386-93.",
+        "pmid": "18669550",
+        "doi": "10.1136/hrt.2008.145292",
+        "url": "https://doi.org/10.1136/hrt.2008.145292",
+        "sourceQuote": "In patient-based detection (n = 1286) 64-slice CT pooled sensitivity was 99% (95% credible interval (CrI) 97% to 99%), specificity 89% (95% CrI 83% to 94%), median positive predictive value (PPV) across studies 93% (range 64-100%) and negative predictive value (NPV) 100% (range 86-100%).",
+        "context": "28 studies pooled; ≥50% stenosis defines significant CAD; reference standard invasive coronary angiography. Intervals reported are Bayesian credible intervals (CrI), so CI object omitted.",
+        "notes": "Very high sensitivity and NPV: excellent rule-out test for significant CAD in suspected/uncertain chest pain. Lower specificity means positives often need confirmation with invasive angiography."
+      }
+    },
+    {
+      "id": "cholecystitis-hida",
+      "diagnosis": "Acute cholecystitis",
+      "testName": "Hepatobiliary scintigraphy (cholescintigraphy / HIDA)",
+      "sensitivity": 0.91,
+      "specificity": 0.63,
+      "ci": {
+        "sensLow": 0.86,
+        "sensHigh": 0.94,
+        "specLow": 0.51,
+        "specHigh": 0.74
+      },
+      "condition": "Adults with suspected acute cholecystitis; cholescintigraphy vs clinical/surgical/pathological reference standard",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Childs DD, Lalwani N, Craven T, Arif H, Morgan M, Anderson M, Fulcher A. A meta-analysis of the performance of ultrasound, hepatobiliary scintigraphy, CT and MRI in the diagnosis of acute cholecystitis. Abdom Radiol (NY). 2023;49(2):384-398.",
+        "pmid": "37982832",
+        "doi": "10.1007/s00261-023-04059-w",
+        "url": "https://doi.org/10.1007/s00261-023-04059-w",
+        "sourceQuote": "Pooled sensitivity and specificity estimates were 69% (confidence limit [CL] 62-76%) and 79% (CL 71-86%) for US, 91% (CL 86-94%) and 63% (CL 51-74%) for cholescintigraphy, 78% (CL 69-84%) and 81% (CL 71-88%) for CT, and 91% (CL 78-97%) and 93% (CL 70-99%) for MRI.",
+        "context": "22 studies (2000-2021); cholescintigraphy (HIDA) values reported; reported confidence limits (CL) are 95% intervals.",
+        "notes": "Most sensitive single modality for acute cholecystitis (good rule-out) but specificity is lower than ultrasound. Often reserved for equivocal ultrasound. Less practical (longer, radiotracer-based) than first-line ultrasound."
+      }
+    },
+    {
+      "id": "cholecystitis-ruq-us",
+      "diagnosis": "Acute cholecystitis",
+      "testName": "Right-upper-quadrant ultrasound",
+      "sensitivity": 0.69,
+      "specificity": 0.79,
+      "ci": {
+        "sensLow": 0.62,
+        "sensHigh": 0.76,
+        "specLow": 0.71,
+        "specHigh": 0.86
+      },
+      "condition": "Adults with suspected acute cholecystitis; transabdominal ultrasound vs clinical/surgical/pathological reference standard",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Childs DD, Lalwani N, Craven T, Arif H, Morgan M, Anderson M, Fulcher A. A meta-analysis of the performance of ultrasound, hepatobiliary scintigraphy, CT and MRI in the diagnosis of acute cholecystitis. Abdom Radiol (NY). 2023;49(2):384-398.",
+        "pmid": "37982832",
+        "doi": "10.1007/s00261-023-04059-w",
+        "url": "https://doi.org/10.1007/s00261-023-04059-w",
+        "sourceQuote": "Pooled sensitivity and specificity estimates were 69% (confidence limit [CL] 62-76%) and 79% (CL 71-86%) for US, 91% (CL 86-94%) and 63% (CL 51-74%) for cholescintigraphy, 78% (CL 69-84%) and 81% (CL 71-88%) for CT, and 91% (CL 78-97%) and 93% (CL 70-99%) for MRI.",
+        "context": "22 studies (2000-2021); ultrasound (US) values reported; reported confidence limits (CL) are 95% intervals.",
+        "notes": "First-line imaging for suspected acute cholecystitis (bedside, no radiation), but in this recent pooled analysis sensitivity was only moderate, so a normal ultrasound does not fully exclude cholecystitis when clinical suspicion is high. Note: older meta-analyses reported higher US sensitivity."
+      }
+    },
+    {
+      "id": "pneumococcal-uat",
+      "diagnosis": "Pneumococcal pneumonia",
+      "testName": "Urinary antigen test (pneumococcal)",
+      "sensitivity": 0.66,
+      "specificity": 0.9,
+      "ci": {
+        "sensLow": 0.62,
+        "sensHigh": 0.69,
+        "specLow": 0.85,
+        "specHigh": 0.93
+      },
+      "condition": "Adults with acute respiratory failure and suspected pneumonia; urinary antigen test vs culture/smear reference methods",
+      "typicalPretest": 0.15,
+      "verified": false,
+      "citation": {
+        "reference": "Yasuo S, Murata M, Nakagawa N, Kawasaki T, Yoshida T, Ando K, Okamori S, Okada Y. Diagnostic accuracy of urinary antigen tests for pneumococcal pneumonia among patients with acute respiratory failure suspected pneumonia: a systematic review and meta-analysis. BMJ Open. 2022;12(8):e057216.",
+        "pmid": "35953247",
+        "doi": "10.1136/bmjopen-2021-057216",
+        "url": "https://doi.org/10.1136/bmjopen-2021-057216",
+        "sourceQuote": "The calculated pooled sensitivity and specificity were of 0.66 (95% CI 0.62 to 0.69) and 0.90 (95% CI 0.85 to 0.93), respectively.",
+        "context": "30 studies, 12,366 patients; pneumococcal urinary antigen test vs culture/smear in patients with acute respiratory failure suspected of pneumonia.",
+        "notes": "Specific but only moderately sensitive: a positive result supports pneumococcal etiology (helps target therapy), but a negative test does not rule out pneumococcal pneumonia. Imperfect culture reference standard likely underestimates true specificity."
+      }
+    },
+    {
+      "id": "cad-exercise-ecg",
+      "diagnosis": "Coronary artery disease (significant, ≥50% stenosis)",
+      "testName": "Exercise treadmill ECG (XECG)",
+      "sensitivity": 0.67,
+      "specificity": 0.46,
+      "ci": {
+        "sensLow": 0.54,
+        "sensHigh": 0.78,
+        "specLow": 0.3,
+        "specHigh": 0.64
+      },
+      "condition": "Patients with suspected stable coronary artery disease; exercise ECG vs invasive coronary angiography (≥50% luminal obstruction)",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Nielsen LH, Ortner N, Nørgaard BL, Achenbach S, Leipsic J, Abdulla J. The diagnostic accuracy and outcomes after coronary computed tomography angiography vs. conventional functional testing in patients with stable angina pectoris: a systematic review and meta-analysis. Eur Heart J Cardiovasc Imaging. 2014;15(9):961-71.",
+        "pmid": "24618659",
+        "doi": "10.1093/ehjci/jeu027",
+        "url": "https://doi.org/10.1093/ehjci/jeu027",
+        "sourceQuote": "The per-patient sensitivity [95% confidence interval (95% CI)] to identify significant CAD was 98% (93-99%) for coronary CTA vs. 67% (54-78%) (P < 0.001) for XECG and 99% (96-100%) vs. 73% (59-83%) (P = 0.001) for SPECT. The specificity (95% CI) of coronary CTA was 82% (63-93%) vs. 46% (30-64%) (P < 0.001) for XECG and 71% (60-80%) vs. 48% (31-64%) (P = 0.14) for SPECT.",
+        "context": "11 studies (N=1575); exercise ECG (XECG) per-patient values extracted; reference standard invasive coronary angiography ≥50% obstruction.",
+        "notes": "Modest sensitivity and low specificity: exercise ECG alone is a weak rule-in/rule-out test for anatomic CAD, which is why anatomic (CTA) or functional imaging often outperforms it. Best interpreted with pretest probability."
+      }
+    },
+    {
+      "id": "pad-abi",
+      "diagnosis": "Peripheral arterial disease",
+      "testName": "Ankle-brachial index (ABI ≤ 0.90)",
+      "sensitivity": 0.75,
+      "specificity": 0.86,
+      "condition": "Adults evaluated for lower-extremity PAD; ABI ≤ 0.90 vs angiography",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Xu D, Zou L, Xing Y, Hou L, Wei Y, Zhang J, Qiao Y, Hu D, Xu Y, Li J, Ma Y. Diagnostic value of ankle-brachial index in peripheral arterial disease: a meta-analysis. Can J Cardiol. 2012;29(4):492-8.",
+        "pmid": "22926041",
+        "doi": "10.1016/j.cjca.2012.06.014",
+        "url": "https://doi.org/10.1016/j.cjca.2012.06.014",
+        "sourceQuote": "The pooled sensitivity and specificity of ABI ≤ 0.90 for PAD diagnosis were 75% and 86% and the pooled PLR and NLR were 4.18 and 0.29, respectively.",
+        "context": "4 studies, 569 patients (922 limbs); ABI ≤ 0.90 threshold vs angiography reference standard. Abstract gives no 95% CI for sensitivity/specificity, so CI object omitted.",
+        "notes": "Reasonably specific but only moderately sensitive (a normal ABI does not exclude PAD, especially with medial arterial calcification in diabetes/CKD where ABI may be falsely normal/high). A low ABI is useful to rule in PAD."
+      }
+    },
+    {
+      "id": "breast-cancer-mammography",
+      "diagnosis": "Breast cancer",
+      "testName": "Screening mammography",
+      "sensitivity": 0.81,
+      "specificity": 0.96,
+      "ci": {
+        "sensLow": 0.77,
+        "sensHigh": 0.84,
+        "specLow": 0.94,
+        "specHigh": 0.96
+      },
+      "condition": "Population-based breast cancer screening, women mostly aged 40-75; mammography vs histopathology/follow-up reference standard",
+      "typicalPretest": 0.005,
+      "verified": false,
+      "citation": {
+        "reference": "Zhu C, Wang L, Du LB, Li J, Zhang J, Dai M, Shi JF. [The accuracy of mammography screening for breast cancer: a Meta-analysis]. Zhonghua Liu Xing Bing Xue Za Zhi. 2016;37(9):1296-1305.",
+        "pmid": "27655581",
+        "doi": "10.3760/cma.j.issn.0254-6450.2016.09.022",
+        "url": "https://doi.org/10.3760/cma.j.issn.0254-6450.2016.09.022",
+        "sourceQuote": "It was estimated that the pooled sensitivity and specificity were 0.81 (95: 0.77-0.84) and 0.96 (95: 0.94-0.96), respectively.",
+        "context": "48 studies, 8,551,873 individuals; population-based screening mammography. '95:' in the source denotes the 95% CI. Sensitivity is lower in dense breasts (subgroup 0.74).",
+        "notes": "High specificity and good sensitivity in average-risk screening, but sensitivity drops in dense breasts. A negative mammogram reduces but does not eliminate the possibility of cancer in symptomatic or high-risk women."
+      }
+    },
+    {
+      "id": "prostate-cancer-psa-4",
+      "diagnosis": "Prostate cancer",
+      "testName": "Prostate-specific antigen (PSA, cutoff 4 ng/mL)",
+      "sensitivity": 0.92,
+      "specificity": 0.16,
+      "condition": "Men in a hospital setting evaluated for prostate cancer; PSA cutoff below 4 ng/mL vs biopsy reference standard",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Jin Y, Jung JH, Han WK, Hwang EC, Nho Y, Lee N, Yun JE, Lee KS, Lee SH, Lee H, Yu SY. Diagnostic accuracy of prostate-specific antigen below 4 ng/mL as a cutoff for diagnosing prostate cancer in a hospital setting: A systematic review and meta-analysis. Investig Clin Urol. 2022;63(3):251-261.",
+        "pmid": "35534215",
+        "doi": "10.4111/icu.20210429",
+        "url": "https://doi.org/10.4111/icu.20210429",
+        "sourceQuote": "The meta-analysis showed a sensitivity of 0.92 and a specificity of 0.16 for a PSA cutoff below 4 ng/mL.",
+        "context": "11 studies; PSA cutoff of 4 ng/mL in a hospital (not population-screening) setting; biopsy reference standard. Abstract gives no 95% CI for this pooled pair, so CI object omitted.",
+        "notes": "Teaching point: at the classic 4 ng/mL cutoff PSA is sensitive but very non-specific in a referred hospital population (many benign causes elevate PSA), so a raised PSA poorly discriminates cancer on its own. PSA is best used with other risk tools, not as a stand-alone rule-in test."
+      }
+    },
+    {
+      "id": "ra-rheumatoid-factor",
+      "diagnosis": "Rheumatoid arthritis",
+      "testName": "Rheumatoid factor (IgM RF)",
+      "sensitivity": 0.69,
+      "specificity": 0.85,
+      "ci": {
+        "sensLow": 0.65,
+        "sensHigh": 0.73,
+        "specLow": 0.82,
+        "specHigh": 0.88
+      },
+      "condition": "Patients with known or suspected rheumatoid arthritis; IgM rheumatoid factor vs clinical RA diagnosis",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Nishimura K, Sugiyama D, Kogata Y, Tsuji G, Nakazawa T, Kawano S, Saigo K, Morinobu A, Koshiba M, Kuntz KM, Kamae I, Kumagai S. Meta-analysis: diagnostic accuracy of anti-cyclic citrullinated peptide antibody and rheumatoid factor for rheumatoid arthritis. Ann Intern Med. 2007;146(11):797-808.",
+        "pmid": "17548411",
+        "doi": "10.7326/0003-4819-146-11-200706050-00008",
+        "url": "https://doi.org/10.7326/0003-4819-146-11-200706050-00008",
+        "sourceQuote": "The pooled sensitivity, specificity, and positive and negative likelihood ratios for anti-CCP antibody were 67% (95% CI, 62% to 72%), 95% (CI, 94% to 97%), 12.46 (CI, 9.72 to 15.98), and 0.36 (CI, 0.31 to 0.42), respectively. For IgM RF, the values were 69% (CI, 65% to 73%), 85% (CI, 82% to 88%), 4.86 (CI, 3.95 to 5.97), and 0.38 (CI, 0.33 to 0.44).",
+        "context": "50 RF studies; values are for IgM RF (sens 69%, spec 85%). The first sentence is quoted to establish the value order (sensitivity, specificity, +LR, -LR) for the IgM RF sentence that follows.",
+        "notes": "Moderately sensitive and specific: less specific than anti-CCP (95%), so RF is more prone to false positives (also seen in hepatitis C, Sjögren, healthy elderly). Anti-CCP is preferred when ruling in RA; RF and anti-CCP are often used together."
+      }
+    },
+    {
+      "id": "carotid-stenosis-duplex",
+      "diagnosis": "Carotid stenosis (≥70%, NASCET)",
+      "testName": "Carotid duplex ultrasonography (PSV ≥200 cm/s)",
+      "sensitivity": 0.9,
+      "specificity": 0.94,
+      "ci": {
+        "sensLow": 0.84,
+        "sensHigh": 0.94,
+        "specLow": 0.88,
+        "specHigh": 0.97
+      },
+      "condition": "Adults assessed for internal carotid artery stenosis; color duplex peak systolic velocity ≥200 cm/s vs catheter angiography (NASCET method), ≥70% stenosis",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Jahromi AS, Cinà CS, Liu Y, Clase CM. Sensitivity and specificity of color duplex ultrasound measurement in the estimation of internal carotid artery stenosis: a systematic review and meta-analysis. J Vasc Surg. 2005;41(6):962-72.",
+        "pmid": "15944595",
+        "doi": "10.1016/j.jvs.2005.02.044",
+        "url": "https://doi.org/10.1016/j.jvs.2005.02.044",
+        "sourceQuote": "For the diagnosis of angiographic stenosis of >/=70%, a peak systolic velocity >/=200 cm/s has a sensitivity of 90% (95% CI, 84% to 94%) and a specificity of 94% (95% CI, 88% to 97%).",
+        "context": "Color duplex PSV ≥200 cm/s threshold for ≥70% internal carotid stenosis; reference standard catheter angiography (NASCET). Measurement properties vary widely between laboratories.",
+        "notes": "Good sensitivity and specificity for high-grade (≥70%) carotid stenosis, supporting duplex as the first-line screen. Inter-laboratory variability is substantial, so confirmatory CTA/MRA is often obtained before surgery."
+      }
+    },
+    {
+      "id": "ms-csf-oligoclonal-bands",
+      "diagnosis": "Multiple sclerosis",
+      "testName": "CSF oligoclonal bands (OCB)",
+      "sensitivity": 0.85,
+      "specificity": 0.92,
+      "condition": "Patients with clinically isolated syndrome or suspected MS; CSF oligoclonal IgG bands discriminating CIS/MS from control subjects",
+      "typicalPretest": 0.5,
+      "verified": false,
+      "citation": {
+        "reference": "Hegen H, Walde J, Berek K, Arrambide G, Gnanapavan S, Kaplan B, Khalil M, Saadeh R, Teunissen C, Tumani H, Villar LM, Willrich MAV, Zetterberg H, Deisenhammer F. Cerebrospinal fluid kappa free light chains for the diagnosis of multiple sclerosis: A systematic review and meta-analysis. Mult Scler. 2022;29(2):169-181.",
+        "pmid": "36453167",
+        "doi": "10.1177/13524585221134213",
+        "url": "https://doi.org/10.1177/13524585221134213",
+        "sourceQuote": "Sensitivity and specificity ranged from 52% to 100% (weighted average: 88%) and 69% to 100% (89%) for κ-FLC index and from 37% to 100% (85%) and 74% to 100% (92%) for OCB.",
+        "context": "32 studies; values used are the weighted-average sensitivity (85%) and specificity (92%) for oligoclonal bands (OCB) discriminating CIS/MS from controls. Wide between-study heterogeneity; abstract reports weighted averages, not a single pooled point estimate with CI, so CI object omitted.",
+        "notes": "Specific supporting test for MS (helps rule in/demonstrate intrathecal IgG synthesis) with good sensitivity, but neither sensitive nor specific enough to diagnose MS alone; interpreted within the McDonald criteria and clinical/MRI context."
+      }
     }
   ],
   "sequences": [
@@ -581,7 +1017,10 @@
       "id": "dvt-workup",
       "name": "DVT: D-dimer → compression US",
       "diagnosis": "Deep vein thrombosis",
-      "steps": ["dvt-ddimer", "dvt-cus"],
+      "steps": [
+        "dvt-ddimer",
+        "dvt-cus"
+      ],
       "stopNote": "In low pre-test probability, a NEGATIVE D-dimer typically excludes DVT; a positive D-dimer is followed by compression ultrasonography.",
       "independenceNote": "D-dimer (fibrin turnover) and ultrasonography (direct visualization) probe different biology, so conditional independence is a reasonable teaching approximation."
     },
@@ -589,7 +1028,10 @@
       "id": "pe-workup",
       "name": "PE: D-dimer → CTPA",
       "diagnosis": "Pulmonary embolism",
-      "steps": ["pe-ddimer", "pe-cta"],
+      "steps": [
+        "pe-ddimer",
+        "pe-cta"
+      ],
       "stopNote": "In low/intermediate pre-test probability, a NEGATIVE high-sensitivity D-dimer typically ends the workup (PE excluded). CTPA is pursued when the D-dimer is positive or pre-test probability is high.",
       "independenceNote": "D-dimer (a biomarker of fibrin turnover) and CTPA (direct imaging) probe different biology, so treating them as conditionally independent is a reasonable teaching approximation."
     }
