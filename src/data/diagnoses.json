@@ -435,6 +435,66 @@
         "context": "Adults with suspected appendicitis, CT vs surgical/follow-up reference; median prevalence 0.43. IV/contrast-enhanced CT slightly more sensitive than unenhanced.",
         "notes": "High on both axes → strong rule-in and rule-out. Verify before teaching use."
       }
+    },
+    {
+      "id": "ibd-calprotectin",
+      "diagnosis": "Inflammatory bowel disease",
+      "testName": "Fecal calprotectin",
+      "sensitivity": 0.88,
+      "specificity": 0.72,
+      "ci": { "sensLow": 0.8, "sensHigh": 0.93, "specLow": 0.59, "specHigh": 0.82 },
+      "condition": "Distinguishing IBD from functional GI disorders (e.g. IBS)",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "An YK, et al. Faecal calprotectin testing for identifying patients with organic gastrointestinal disease: systematic review and meta-analysis. Med J Aust. 2019;211(10):461-467 (18 studies).",
+        "doi": "10.5694/mja2.50384",
+        "pmid": "31680263",
+        "url": "https://doi.org/10.5694/mja2.50384",
+        "sourceQuote": "For distinguishing IBD from functional GIDs (ten studies), sensitivity was 88% (95% CI, 80-93%), specificity 72% (95% CI, 59-82%), and AUC 0.89.",
+        "context": "Fecal calprotectin (ELISA, cutoff 50-100 µg/g) to separate IBD from functional GI disorders. The same review notes a very high negative predictive value at low prevalence.",
+        "notes": "Excellent rule-out at low prevalence (good triage before colonoscopy); modest specificity (raised in many organic conditions). Verify before teaching use."
+      }
+    },
+    {
+      "id": "aspergillosis-gm",
+      "diagnosis": "Invasive aspergillosis",
+      "testName": "Serum galactomannan (ODI ≥0.5)",
+      "sensitivity": 0.82,
+      "specificity": 0.81,
+      "ci": { "sensLow": 0.73, "sensHigh": 0.9, "specLow": 0.72, "specHigh": 0.9 },
+      "condition": "Immunocompromised / neutropenic patients (vs EORTC/MSG criteria)",
+      "typicalPretest": 0.1,
+      "verified": false,
+      "citation": {
+        "reference": "Leeflang MMG, et al. Galactomannan detection for invasive aspergillosis in immunocompromised patients. Cochrane Database Syst Rev. 2015;(12):CD007394 (54 studies, 5660 patients).",
+        "doi": "10.1002/14651858.CD007394.pub2",
+        "pmid": "26716951",
+        "url": "https://doi.org/10.1002/14651858.CD007394.pub2",
+        "sourceQuote": "When using an optical density index (ODI) of 0.5 as a cut-off value, the sensitivity of the test was 82% (73% to 90%) and the specificity was 81% (72% to 90%).",
+        "context": "Serum galactomannan ELISA in neutropenic/immunocompromised patients; cutoff ODI 0.5. Higher cutoffs (1.0, 1.5) raise specificity at the cost of sensitivity. Results were heterogeneous.",
+        "notes": "Threshold choice trades sensitivity for specificity — a good cutoff-effect teaching example. Verify before teaching use."
+      }
+    },
+    {
+      "id": "diabetes-hba1c",
+      "diagnosis": "Type 2 diabetes",
+      "testName": "HbA1c ≥ 6.5% (venous)",
+      "sensitivity": 0.5,
+      "specificity": 0.973,
+      "ci": { "sensLow": 0.42, "sensHigh": 0.59, "specLow": 0.953, "specHigh": 0.984 },
+      "condition": "Screening previously undiagnosed adults (vs OGTT)",
+      "typicalPretest": 0.1,
+      "verified": false,
+      "citation": {
+        "reference": "Kaur G, et al. Diagnostic accuracy of tests for type 2 diabetes and prediabetes: a systematic review and meta-analysis. PLoS One. 2020;15(11):e0242415 (HbA1c: 17 studies).",
+        "doi": "10.1371/journal.pone.0242415",
+        "pmid": "33216783",
+        "url": "https://doi.org/10.1371/journal.pone.0242415",
+        "sourceQuote": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+        "context": "HbA1c at the 6.5% diagnostic threshold vs OGTT in previously undiagnosed community adults. A lower cutoff (~6.0%) raises sensitivity at the cost of specificity.",
+        "notes": "Striking teaching case: at 6.5%, HbA1c is highly specific (rules in) but misses ~half of OGTT-defined diabetes — a normal value does NOT exclude it. Verify before teaching use."
+      }
     }
   ],
   "sequences": [
