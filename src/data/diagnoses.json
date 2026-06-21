@@ -316,6 +316,65 @@
         "context": "Adults with presumptive pulmonary TB vs culture. Sensitivity is lower in smear-negative (67%) and HIV-positive (81%) patients, so a negative result does not exclude TB.",
         "notes": "High specificity → strong rule-in; imperfect sensitivity (especially smear-negative/HIV+) means negatives need follow-up. Verify before teaching use."
       }
+    },
+    {
+      "id": "gca-us",
+      "diagnosis": "Giant cell arteritis",
+      "testName": "Temporal artery ultrasound (halo sign)",
+      "sensitivity": 0.75,
+      "specificity": 0.83,
+      "ci": { "sensLow": 0.67, "sensHigh": 0.82, "specLow": 0.78, "specHigh": 0.88 },
+      "condition": "Suspected giant cell (temporal) arteritis (vs temporal artery biopsy)",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Ball EL, et al. Role of ultrasonography in the diagnosis of temporal arteritis. Br J Surg. 2010;97(12):1765-1771 (17 studies, 998 patients).",
+        "doi": "10.1002/bjs.7252",
+        "pmid": "20799290",
+        "url": "https://doi.org/10.1002/bjs.7252",
+        "sourceQuote": "When the halo sign on duplex imaging was compared with TA biopsy, the sensitivity was 75 (95 per cent confidence interval 67 to 82) per cent and the specificity was 83 (78 to 88) per cent.",
+        "context": "Halo sign on colour duplex ultrasonography vs temporal artery biopsy. Newer studies and protocols (e.g. axillary involvement, compression sign) may differ.",
+        "notes": "Imperfect on both axes; a negative scan does not exclude GCA when suspicion is high. Verify before teaching use."
+      }
+    },
+    {
+      "id": "aad-ddimer",
+      "diagnosis": "Acute aortic dissection",
+      "testName": "D-dimer (cutoff 500 ng/mL)",
+      "sensitivity": 0.952,
+      "specificity": 0.604,
+      "ci": { "sensLow": 0.901, "sensHigh": 0.978, "specLow": 0.485, "specHigh": 0.712 },
+      "condition": "Suspected acute aortic syndrome (rule-out)",
+      "typicalPretest": 0.15,
+      "verified": false,
+      "citation": {
+        "reference": "Watanabe H, et al. Diagnostic test accuracy of D-dimer for acute aortic syndrome: systematic review and meta-analysis of 22 studies with 5000 subjects. Sci Rep. 2016;6:26893.",
+        "doi": "10.1038/srep26893",
+        "pmid": "27230962",
+        "url": "https://doi.org/10.1038/srep26893",
+        "sourceQuote": "Based on ... 12 studies that used the cutoff value of 500 ng/ml, the sensitivity was 0.952 (95% CI 0.901-0.978), the specificity was 0.604 (95% CI 0.485-0.712).",
+        "context": "Acute aortic syndrome/dissection, D-dimer cutoff 500 ng/mL. High sensitivity, low specificity. Pre-test probability scoring (e.g. ADD-RS) modifies how it is used.",
+        "notes": "Rule-out parallel to D-dimer in PE: a value <500 ng/mL substantially lowers the probability of dissection. Verify before teaching use."
+      }
+    },
+    {
+      "id": "hpylori-ubt",
+      "diagnosis": "Helicobacter pylori infection",
+      "testName": "Urea breath test (13C)",
+      "sensitivity": 0.94,
+      "specificity": 0.9,
+      "condition": "Suspected H. pylori, off PPIs/antibiotics (vs histopathology)",
+      "typicalPretest": 0.4,
+      "verified": false,
+      "citation": {
+        "reference": "Best LMJ, et al. Non-invasive diagnostic tests for Helicobacter pylori infection. Cochrane Database Syst Rev. 2018;3:CD012080 (101 studies, 11,003 participants).",
+        "doi": "10.1002/14651858.CD012080.pub2",
+        "pmid": "29543326",
+        "url": "https://doi.org/10.1002/14651858.CD012080.pub2",
+        "sourceQuote": "The sensitivity (95% CI) estimated at a fixed specificity of 0.90 (median from studies across the four tests), was 0.94 (95% CI 0.89 to 0.97) for urea breath test-C",
+        "context": "13C urea breath test vs histopathology; sensitivity estimated at a FIXED specificity of 0.90 (the cross-test median, so no separate specificity CI). Recent PPIs or antibiotics reduce sensitivity.",
+        "notes": "Sensitivity 95% CI 0.89-0.97. The most accurate non-invasive test; serology and stool antigen are somewhat less accurate. Verify before teaching use."
+      }
     }
   ],
   "sequences": [
