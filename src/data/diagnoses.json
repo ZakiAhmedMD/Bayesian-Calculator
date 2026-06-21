@@ -375,6 +375,66 @@
         "context": "13C urea breath test vs histopathology; sensitivity estimated at a FIXED specificity of 0.90 (the cross-test median, so no separate specificity CI). Recent PPIs or antibiotics reduce sensitivity.",
         "notes": "Sensitivity 95% CI 0.89-0.97. The most accurate non-invasive test; serology and stool antigen are somewhat less accurate. Verify before teaching use."
       }
+    },
+    {
+      "id": "meningitis-csflactate",
+      "diagnosis": "Bacterial meningitis",
+      "testName": "CSF lactate (cutoff ~35 mg/dL)",
+      "sensitivity": 0.93,
+      "specificity": 0.96,
+      "ci": { "sensLow": 0.89, "sensHigh": 0.96, "specLow": 0.93, "specHigh": 0.98 },
+      "condition": "Differentiating bacterial from aseptic meningitis",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Sakushima K, et al. Diagnostic accuracy of cerebrospinal fluid lactate for differentiating bacterial meningitis from aseptic meningitis: a meta-analysis. J Infect. 2011;62(4):255-262 (33 studies).",
+        "doi": "10.1016/j.jinf.2011.02.010",
+        "pmid": "21382412",
+        "url": "https://doi.org/10.1016/j.jinf.2011.02.010",
+        "sourceQuote": "The pooled test characteristics of CSF lactate were sensitivity 0.93 (95% CI: 0.89-0.96), specificity 0.96 (95% CI: 0.93-0.98), likelihood ratio positive 22.9 ...",
+        "context": "CSF lactate to distinguish bacterial from aseptic meningitis, cutoff ~35 mg/dL. CRITICAL caveat: prior antibiotic treatment lowers sensitivity to ~0.49.",
+        "notes": "Strong test in the untreated patient, but pre-treatment with antibiotics markedly reduces sensitivity. Verify before teaching use."
+      }
+    },
+    {
+      "id": "acpe-lus",
+      "diagnosis": "Acute cardiogenic pulmonary edema",
+      "testName": "Lung ultrasound (B-lines)",
+      "sensitivity": 0.941,
+      "specificity": 0.924,
+      "ci": { "sensLow": 0.813, "sensHigh": 0.983, "specLow": 0.842, "specHigh": 0.964 },
+      "condition": "ED patients with acute dyspnea (point-of-care)",
+      "typicalPretest": 0.4,
+      "verified": false,
+      "citation": {
+        "reference": "Al Deeb M, et al. Point-of-care ultrasonography for the diagnosis of acute cardiogenic pulmonary edema in patients presenting with acute dyspnea: a systematic review and meta-analysis. Acad Emerg Med. 2014;21(8):843-852 (7 studies, 1075 patients).",
+        "doi": "10.1111/acem.12435",
+        "pmid": "25176151",
+        "url": "https://doi.org/10.1111/acem.12435",
+        "sourceQuote": "The sensitivity of US using B-lines to diagnosis ACPE is 94.1% (95% confidence interval [CI] = 81.3% to 98.3%) and the specificity is 92.4% (95% CI = 84.2% to 96.4%).",
+        "context": "Point-of-care lung ultrasound B-lines for acute cardiogenic pulmonary edema in undifferentiated dyspnea; reference standard was final clinical diagnosis.",
+        "notes": "Good rule-in and rule-out at the bedside; operator- and protocol-dependent. Verify before teaching use."
+      }
+    },
+    {
+      "id": "appendicitis-ct",
+      "diagnosis": "Acute appendicitis",
+      "testName": "Abdominopelvic CT",
+      "sensitivity": 0.95,
+      "specificity": 0.94,
+      "ci": { "sensLow": 0.93, "sensHigh": 0.96, "specLow": 0.92, "specHigh": 0.95 },
+      "condition": "Adults with suspected appendicitis (add-on after clinical evaluation)",
+      "typicalPretest": 0.4,
+      "verified": false,
+      "citation": {
+        "reference": "Rud B, et al. Computed tomography for diagnosis of acute appendicitis in adults. Cochrane Database Syst Rev. 2019;(11):CD009977 (64 studies, 10,280 participants).",
+        "doi": "10.1002/14651858.CD009977.pub2",
+        "pmid": "31743429",
+        "url": "https://doi.org/10.1002/14651858.CD009977.pub2",
+        "sourceQuote": "Summary sensitivity was 0.95 (95% confidence interval (CI) 0.93 to 0.96), and summary specificity was 0.94 (95% CI 0.92 to 0.95).",
+        "context": "Adults with suspected appendicitis, CT vs surgical/follow-up reference; median prevalence 0.43. IV/contrast-enhanced CT slightly more sensitive than unenhanced.",
+        "notes": "High on both axes → strong rule-in and rule-out. Verify before teaching use."
+      }
     }
   ],
   "sequences": [
