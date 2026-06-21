@@ -274,6 +274,58 @@ a {
   color: var(--warn-text);
   border: 1px solid var(--warn-border);
 }
+.badge--setting {
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+.setting--acute {
+  background: var(--primary-soft);
+  color: var(--primary);
+  border: 1px solid #bfdbfe;
+}
+.setting--nonacute {
+  background: #f1f5f9;
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* Test selector: acute-care filter header + setting tag */
+.selector__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+.selector__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text);
+  cursor: pointer;
+}
+.selector__toggle input {
+  accent-color: var(--primary);
+}
+.muted {
+  color: var(--muted);
+}
+.results__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.results__test {
+  font-weight: 700;
+  font-size: 1rem;
+}
 
 /* ---------- Visualizations ---------- */
 .viz-grid {
