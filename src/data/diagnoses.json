@@ -61,9 +61,115 @@
         "context": "Compression ultrasonography detects proximal DVT as a surrogate for PE; low sensitivity means a negative study does NOT exclude PE.",
         "notes": "Illustrates a rule-in (not rule-out) test: high specificity, low sensitivity."
       }
+    },
+    {
+      "id": "dvt-cus",
+      "diagnosis": "Deep vein thrombosis",
+      "testName": "Proximal compression ultrasonography",
+      "sensitivity": 0.901,
+      "specificity": 0.985,
+      "ci": { "sensLow": 0.865, "sensHigh": 0.928, "specLow": 0.976, "specHigh": 0.991 },
+      "condition": "Suspected lower-extremity DVT",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Bhatt M, et al. Diagnosis of deep vein thrombosis of the lower extremity: a systematic review and meta-analysis of test accuracy. Blood Adv. 2020;4(7):1250-1264 (43 studies).",
+        "doi": "10.1182/bloodadvances.2019000960",
+        "pmid": "32227213",
+        "url": "https://doi.org/10.1182/bloodadvances.2019000960",
+        "sourceQuote": "For any suspected DVT, the pooled estimates for sensitivity and specificity of proximal compression US were 90.1% (95% confidence interval [CI], 86.5-92.8) and 98.5% (95% CI, 97.6-99.1), respectively.",
+        "context": "Proximal (not whole-leg) compression ultrasonography for lower-extremity DVT; whole-leg and serial US have different characteristics.",
+        "notes": "High specificity makes a POSITIVE result a strong rule-in. Verify against source before teaching use."
+      }
+    },
+    {
+      "id": "dvt-ddimer",
+      "diagnosis": "Deep vein thrombosis",
+      "testName": "D-dimer (quantitative)",
+      "sensitivity": 0.961,
+      "specificity": 0.357,
+      "ci": { "sensLow": 0.926, "sensHigh": 0.98, "specLow": 0.295, "specHigh": 0.424 },
+      "condition": "Rule-out in low / intermediate pre-test probability",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Bhatt M, et al. Diagnosis of deep vein thrombosis of the lower extremity: a systematic review and meta-analysis of test accuracy. Blood Adv. 2020;4(7):1250-1264 (43 studies).",
+        "doi": "10.1182/bloodadvances.2019000960",
+        "pmid": "32227213",
+        "url": "https://doi.org/10.1182/bloodadvances.2019000960",
+        "sourceQuote": "For D-dimer, pooled estimates were 96.1% (95% CI, 92.6-98.0) and 35.7% (95% CI, 29.5-42.4).",
+        "context": "Quantitative D-dimer for suspected lower-extremity DVT; low specificity means a positive result is non-specific.",
+        "notes": "High sensitivity / low specificity → strong rule-out when negative."
+      }
+    },
+    {
+      "id": "hf-bnp",
+      "diagnosis": "Heart failure",
+      "testName": "BNP (B-type natriuretic peptide)",
+      "sensitivity": 0.8,
+      "specificity": 0.61,
+      "condition": "Suspected heart failure (optimal cutpoint)",
+      "typicalPretest": 0.4,
+      "verified": false,
+      "citation": {
+        "reference": "Booth RA, et al. Performance of BNP and NT-proBNP for diagnosis of heart failure in primary care patients: a systematic review. Heart Fail Rev. 2014;19(4):439-451.",
+        "doi": "10.1007/s10741-014-9445-8",
+        "pmid": "24969534",
+        "url": "https://doi.org/10.1007/s10741-014-9445-8",
+        "sourceQuote": "Pooled sensitivity and specificity of BNP and NT-proBNP using the lowest [0.85 (sensitivity) and 0.54 (specificity)], optimal (0.80 and 0.61), and manufacturers' (0.74 and 0.67) cutpoints showed good performance for diagnosing HF.",
+        "context": "Primary-care populations; performance is cutpoint-dependent (values shown are the 'optimal' cutpoint). Specificity is lower and more variable than sensitivity.",
+        "notes": "Best used as a rule-out (high sensitivity at low thresholds). Acute-care thresholds differ; verify before teaching use."
+      }
+    },
+    {
+      "id": "hf-ntprobnp",
+      "diagnosis": "Heart failure",
+      "testName": "NT-proBNP",
+      "sensitivity": 0.86,
+      "specificity": 0.58,
+      "condition": "Suspected heart failure (optimal cutpoint)",
+      "typicalPretest": 0.4,
+      "verified": false,
+      "citation": {
+        "reference": "Booth RA, et al. Performance of BNP and NT-proBNP for diagnosis of heart failure in primary care patients: a systematic review. Heart Fail Rev. 2014;19(4):439-451.",
+        "doi": "10.1007/s10741-014-9445-8",
+        "pmid": "24969534",
+        "url": "https://doi.org/10.1007/s10741-014-9445-8",
+        "sourceQuote": "Similar performance was seen for NT-proBNP: lowest (0.90 and 0.50), optimal (0.86 and 0.58), and manufacturers' (0.82 and 0.58) cutpoints.",
+        "context": "Primary-care populations; 'optimal' cutpoint shown. No statistically significant difference in accuracy vs BNP.",
+        "notes": "Rule-out test; threshold- and population-dependent. Verify before teaching use."
+      }
+    },
+    {
+      "id": "mi-hstroponin",
+      "diagnosis": "Acute myocardial infarction",
+      "testName": "High-sensitivity troponin (ESC 0/1-hour algorithm)",
+      "sensitivity": 0.99,
+      "specificity": 0.91,
+      "ci": { "sensLow": 0.98, "sensHigh": 0.99, "specLow": 0.91, "specHigh": 0.92 },
+      "condition": "ED patients with suspected ACS without ST-elevation; serial 0h/1h algorithm",
+      "typicalPretest": 0.15,
+      "verified": false,
+      "citation": {
+        "reference": "Burgos LM, et al. Performance of the ESC 0/1-hour algorithm in the diagnosis of myocardial infarction with high-sensitivity cardiac troponin: systematic review and meta-analysis. Eur Heart J Acute Cardiovasc Care. 2020;10(3):279-286 (11 studies, 19,213 patients).",
+        "doi": "10.1177/2048872620935399",
+        "pmid": "32597681",
+        "url": "https://doi.org/10.1177/2048872620935399",
+        "sourceQuote": "Summary sensitivity and specificity in diagnosing AMI were 99% (95% CI 98-99%;63%) and 91% (95% CI 91-92%;96%) respectively.",
+        "context": "Emergency-department suspected ACS, AMI prevalence ~11%; the 0h/1h SERIAL hs-cTn algorithm, not a single draw. The 63% / 96% after each CI are I-squared heterogeneity, not part of the interval.",
+        "notes": "Very high sensitivity → excellent rule-out; the algorithm also rules in. Verify before teaching use."
+      }
     }
   ],
   "sequences": [
+    {
+      "id": "dvt-workup",
+      "name": "DVT: D-dimer → compression US",
+      "diagnosis": "Deep vein thrombosis",
+      "steps": ["dvt-ddimer", "dvt-cus"],
+      "stopNote": "In low pre-test probability, a NEGATIVE D-dimer typically excludes DVT; a positive D-dimer is followed by compression ultrasonography.",
+      "independenceNote": "D-dimer (fibrin turnover) and ultrasonography (direct visualization) probe different biology, so conditional independence is a reasonable teaching approximation."
+    },
     {
       "id": "pe-workup",
       "name": "PE: D-dimer → CTPA",
