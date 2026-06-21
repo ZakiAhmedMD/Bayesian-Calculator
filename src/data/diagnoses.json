@@ -238,6 +238,84 @@
         "context": "Traditional RIDT vs RT-PCR, influenza A. Specificity uniformly >98% (0.98 used as the stated floor; no precise spec interval reported). Sensitivity is higher in children and far higher for digital immunoassays and rapid NAATs.",
         "notes": "The textbook low-sensitivity / high-specificity test: a POSITIVE rules in, but a NEGATIVE does NOT rule out influenza. Sensitivity CrI 48.9-59.8%. Verify before teaching use."
       }
+    },
+    {
+      "id": "pheo-nmn",
+      "diagnosis": "Pheochromocytoma / paraganglioma",
+      "testName": "Plasma free normetanephrine",
+      "sensitivity": 0.97,
+      "specificity": 0.97,
+      "ci": { "sensLow": 0.94, "sensHigh": 0.98, "specLow": 0.92, "specHigh": 0.99 },
+      "condition": "Suspected PPGL (typically a low-prevalence screened population)",
+      "typicalPretest": 0.05,
+      "verified": false,
+      "citation": {
+        "reference": "Chen Y, et al. Accuracy of plasma free metanephrines in the diagnosis of pheochromocytoma and paraganglioma: a systematic review and meta-analysis. Endocr Pract. 2017;23(10):1169-1177.",
+        "doi": "10.4158/EP171877.OR",
+        "pmid": "28704098",
+        "url": "https://doi.org/10.4158/EP171877.OR",
+        "sourceQuote": "NMN was generally more accurate than individual tests, with the highest AUC (0.99, 95% CI 0.97-0.99), DOR (443.35, 95% CI 216.9-906.23), and pooled sensitivity (0.97, 95% CI 0.94-0.98) values.",
+        "context": "Plasma free normetanephrine (NMN) for PPGL; per the same meta-analysis NMN specificity was 0.97 (95% CI 0.92-0.99). LC-MS/MS preferred; cutoff and sampling position drive heterogeneity.",
+        "notes": "Teaching case: even at ~97% sensitivity AND specificity, the low pre-test probability of PPGL keeps PPV modest. Verify before teaching use."
+      }
+    },
+    {
+      "id": "sle-ana",
+      "diagnosis": "Systemic lupus erythematosus",
+      "testName": "Antinuclear antibody (ANA) by indirect immunofluorescence",
+      "sensitivity": 0.952,
+      "specificity": 0.833,
+      "condition": "Suspected SLE (vs systemic rheumatic disease and healthy controls)",
+      "typicalPretest": 0.1,
+      "verified": false,
+      "citation": {
+        "reference": "Jeong S, et al. Diagnostic value of screening enzyme immunoassays compared to indirect immunofluorescence for anti-nuclear antibodies in patients with systemic rheumatic diseases: a systematic review and meta-analysis. Semin Arthritis Rheum. 2018;48(2):334-342.",
+        "doi": "10.1016/j.semarthrit.2018.01.011",
+        "pmid": "29609799",
+        "url": "https://doi.org/10.1016/j.semarthrit.2018.01.011",
+        "sourceQuote": "the summary sensitivities of SEIA vs. IIF were 87.4% vs 88.4% for combined SRDs, 89.4% vs. 95.2% for SLE ... the summary specificities of SEIA vs. IIF were 79.7% vs.78.9% for combined SRDs, 89.1% vs. 83.3% for SLE",
+        "context": "ANA by indirect immunofluorescence (IIF) for SLE. High sensitivity → good rule-out; specificity is limited because ANA is positive in many other conditions and some healthy people. Screening EIA differs (sens 89.4%, spec 89.1%).",
+        "notes": "Classic rule-out: a negative ANA makes SLE unlikely; a positive ANA is non-specific. Verify before teaching use."
+      }
+    },
+    {
+      "id": "bacteremia-pct",
+      "diagnosis": "Bacteremia",
+      "testName": "Procalcitonin (cutoff 0.5 ng/mL)",
+      "sensitivity": 0.76,
+      "specificity": 0.69,
+      "condition": "Adults suspected of infection / sepsis (vs blood cultures)",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Hoeboer SH, et al. The diagnostic accuracy of procalcitonin for bacteraemia: a systematic review and meta-analysis. Clin Microbiol Infect. 2015;21(5):474-481 (58 studies, 16,514 patients).",
+        "doi": "10.1016/j.cmi.2014.12.026",
+        "pmid": "25726038",
+        "url": "https://doi.org/10.1016/j.cmi.2014.12.026",
+        "sourceQuote": "The optimal and most widely used procalcitonin cut-off value was 0.5 ng/mL with a corresponding sensitivity of 76% and specificity of 69%.",
+        "context": "Procalcitonin at 0.5 ng/mL for bacteraemia (positive blood cultures) in adults; overall SROC AUC 0.79; accuracy varies by subgroup (ICU higher, neutropenic lower).",
+        "notes": "Moderate sensitivity AND specificity — a good example of a test that only modestly shifts probability. Verify before teaching use."
+      }
+    },
+    {
+      "id": "tb-xpert",
+      "diagnosis": "Pulmonary tuberculosis",
+      "testName": "Xpert MTB/RIF (sputum nucleic acid amplification)",
+      "sensitivity": 0.85,
+      "specificity": 0.98,
+      "ci": { "sensLow": 0.82, "sensHigh": 0.88, "specLow": 0.97, "specHigh": 0.98 },
+      "condition": "Adults with presumptive pulmonary TB (vs culture)",
+      "typicalPretest": 0.15,
+      "verified": false,
+      "citation": {
+        "reference": "Horne DJ, et al. Xpert MTB/RIF and Xpert MTB/RIF Ultra for pulmonary tuberculosis and rifampicin resistance in adults. Cochrane Database Syst Rev. 2019;6:CD009593 (86 studies, 42,091 participants).",
+        "doi": "10.1002/14651858.CD009593.pub4",
+        "pmid": "31173647",
+        "url": "https://doi.org/10.1002/14651858.CD009593.pub4",
+        "sourceQuote": "Xpert MTB/RIF pooled sensitivity and specificity (95% credible Interval (CrI)) were 85% (82% to 88%) and 98% (97% to 98%), (70 studies, 37,237 unselected participants; high-certainty evidence).",
+        "context": "Adults with presumptive pulmonary TB vs culture. Sensitivity is lower in smear-negative (67%) and HIV-positive (81%) patients, so a negative result does not exclude TB.",
+        "notes": "High specificity → strong rule-in; imperfect sensitivity (especially smear-negative/HIV+) means negatives need follow-up. Verify before teaching use."
+      }
     }
   ],
   "sequences": [
