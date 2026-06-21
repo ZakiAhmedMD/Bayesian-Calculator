@@ -1010,6 +1010,175 @@
         "context": "32 studies; values used are the weighted-average sensitivity (85%) and specificity (92%) for oligoclonal bands (OCB) discriminating CIS/MS from controls. Wide between-study heterogeneity; abstract reports weighted averages, not a single pooled point estimate with CI, so CI object omitted.",
         "notes": "Specific supporting test for MS (helps rule in/demonstrate intrathecal IgG synthesis) with good sensitivity, but neither sensitive nor specific enough to diagnose MS alone; interpreted within the McDonald criteria and clinical/MRI context."
       }
+    },
+    {
+      "id": "crypto-crag",
+      "diagnosis": "Cryptococcal meningitis",
+      "testName": "Serum cryptococcal antigen (CrAg)",
+      "sensitivity": 0.997,
+      "specificity": 0.941,
+      "ci": {
+        "sensLow": 0.974,
+        "sensHigh": 1.0,
+        "specLow": 0.883,
+        "specHigh": 0.981
+      },
+      "condition": "Adults with HIV and suspected cryptococcal meningitis",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Temfack E, et al. Cryptococcal antigen in serum and cerebrospinal fluid for detecting cryptococcal meningitis in adults living with HIV: systematic review and meta-analysis. Clin Infect Dis. 2021;72(7):1268-1278 (11 studies, 3600 participants).",
+        "pmid": "32829406",
+        "doi": "10.1093/cid/ciaa1243",
+        "url": "https://doi.org/10.1093/cid/ciaa1243",
+        "sourceQuote": "Summary sensitivity and specificity of serum CrAg were 99.7% (97.4-100) and 94.1% (88.3-98.1), respectively, and summary sensitivity and specificity of CSF CrAg were 98.8% (96.2-99.6) and 99.3% (96.7-99.9), respectively.",
+        "context": "Serum CrAg (lateral flow / latex agglutination) in HIV-positive adults with suspected CM. CSF CrAg is even more specific (99.3%).",
+        "notes": "Near-perfect sensitivity: a negative serum CrAg effectively rules out cryptococcal meningitis. Verify before teaching use."
+      }
+    },
+    {
+      "id": "ifd-bdg",
+      "diagnosis": "Invasive fungal disease",
+      "testName": "Serum (1->3)-beta-D-glucan",
+      "sensitivity": 0.76,
+      "specificity": 0.85,
+      "ci": {
+        "sensLow": 0.67,
+        "sensHigh": 0.83,
+        "specLow": 0.73,
+        "specHigh": 0.92
+      },
+      "condition": "At-risk (e.g. hematology) patients; proven/probable vs possible/no IFD",
+      "typicalPretest": 0.15,
+      "verified": false,
+      "citation": {
+        "reference": "Lu Y, et al. Diagnosis of invasive fungal disease using serum (1->3)-beta-D-glucan: a bivariate meta-analysis. Intern Med. 2011;50(22):2783-2791 (15 studies).",
+        "pmid": "22082890",
+        "doi": "10.2169/internalmedicine.50.6175",
+        "url": "https://doi.org/10.2169/internalmedicine.50.6175",
+        "sourceQuote": "The sensitivity, specificity, PLR and NLR were 0.76 (95% CI, 0.67-0.83), 0.85 (95% CI, 0.73-0.92), 5.05 (95% CI, 2.71-9.43), and 0.28 (95% CI, 0.20-0.39), respectively.",
+        "context": "Serum beta-D-glucan for invasive fungal disease in at-risk patients; higher specificity in hematology patients and with two consecutive positive samples. Combining with galactomannan raises specificity to ~0.98 for aspergillosis.",
+        "notes": "Only moderately sensitive and specific; interpret alongside clinical findings. Verify before teaching use."
+      }
+    },
+    {
+      "id": "malaria-rdt",
+      "diagnosis": "Falciparum malaria",
+      "testName": "Rapid diagnostic test (HRP-2 antigen)",
+      "sensitivity": 0.948,
+      "specificity": 0.952,
+      "ci": {
+        "sensLow": 0.931,
+        "sensHigh": 0.961,
+        "specLow": 0.932,
+        "specHigh": 0.967
+      },
+      "condition": "Symptomatic patients in P. falciparum-endemic areas (vs microscopy)",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Abba K, et al. Rapid diagnostic tests for diagnosing uncomplicated P. falciparum malaria in endemic countries. Cochrane Database Syst Rev. 2011;(7):CD008122 (74 studies).",
+        "pmid": "21735422",
+        "doi": "10.1002/14651858.CD008122.pub2",
+        "url": "https://doi.org/10.1002/14651858.CD008122.pub2",
+        "sourceQuote": "average sensitivities and specificities (95% CI) were 94.8% (93.1% to 96.1%) and 95.2% (93.2% to 96.7%) for Type 1 tests",
+        "context": "HRP-2 antigen-based RDTs (Type 1) vs microscopy in symptomatic patients in endemic areas. HRP-2 persists after treatment, so it cannot monitor treatment response.",
+        "notes": "Good rule-in and rule-out where malaria is endemic; pLDH-based tests are slightly more specific. Verify before teaching use."
+      }
+    },
+    {
+      "id": "dengue-rdt",
+      "diagnosis": "Dengue",
+      "testName": "Rapid immunochromatographic test (NS1 + IgM/IgG)",
+      "sensitivity": 0.9,
+      "specificity": 0.89,
+      "ci": {
+        "sensLow": 0.87,
+        "sensHigh": 0.92,
+        "specLow": 0.87,
+        "specHigh": 0.92
+      },
+      "condition": "Suspected dengue (combined antigen + antibody RDT vs ELISA)",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Macedo JVL, et al. A systematic review and meta-analysis on the accuracy of rapid immunochromatographic tests for dengue diagnosis. Eur J Clin Microbiol Infect Dis. 2022;41(9):1191-1201 (17 studies).",
+        "pmid": "35988010",
+        "doi": "10.1007/s10096-022-04485-6",
+        "url": "https://doi.org/10.1007/s10096-022-04485-6",
+        "sourceQuote": "the association of the three analytes bestows the best result, with a combined sensitivity of 90% (CI 95%: 87-92%) and a pooled specificity of 89% (CI 95%: 87-92%).",
+        "context": "Combined NS1 antigen + IgM/IgG antibody RDT vs ELISA reference. NS1 alone varies widely with timing (sensitivity range 14.7-100%).",
+        "notes": "The combined antigen+antibody test outperforms any single analyte; timing within illness matters. Verify before teaching use."
+      }
+    },
+    {
+      "id": "hpylori-sat",
+      "diagnosis": "Helicobacter pylori infection",
+      "testName": "Monoclonal stool antigen test (pre-treatment)",
+      "sensitivity": 0.94,
+      "specificity": 0.97,
+      "ci": {
+        "sensLow": 0.93,
+        "sensHigh": 0.95,
+        "specLow": 0.96,
+        "specHigh": 0.98
+      },
+      "condition": "Initial diagnosis of H. pylori, before eradication therapy",
+      "typicalPretest": 0.4,
+      "verified": false,
+      "citation": {
+        "reference": "Gisbert JP, de la Morena F, Abraira V. Accuracy of monoclonal stool antigen test for the diagnosis of H. pylori infection: a systematic review and meta-analysis. Am J Gastroenterol. 2006;101(8):1921-1930 (22 studies, 2499 patients).",
+        "pmid": "16780557",
+        "doi": "10.1111/j.1572-0241.2006.00668.x",
+        "url": "https://doi.org/10.1111/j.1572-0241.2006.00668.x",
+        "sourceQuote": "Pooled sensitivity, specificity, LR+, and LR- were: 0.94 (95% CI 0.93-0.95), 0.97 (0.96-0.98), 24 (15-41), and 0.07 (0.04-0.12).",
+        "context": "Monoclonal stool antigen test before eradication therapy; more sensitive than the polyclonal technique. A non-invasive alternative/complement to the urea breath test.",
+        "notes": "Accurate non-invasive H. pylori test; recent PPIs/antibiotics/bismuth reduce sensitivity. Verify before teaching use."
+      }
+    },
+    {
+      "id": "aaa-pocus",
+      "diagnosis": "Abdominal aortic aneurysm",
+      "testName": "Point-of-care ultrasound",
+      "sensitivity": 0.978,
+      "specificity": 0.97,
+      "condition": "ED patients suspected of ruptured AAA (PoCUS detects the aneurysm, not rupture)",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Fernando SM, et al. Accuracy of presenting symptoms, physical examination, and imaging for diagnosis of ruptured abdominal aortic aneurysm: systematic review and meta-analysis. Acad Emerg Med. 2022;29(4):486-496 (20 studies).",
+        "pmid": "35220634",
+        "doi": "10.1111/acem.14475",
+        "url": "https://doi.org/10.1111/acem.14475",
+        "sourceQuote": "PoCUS had a sensitivity of 97.8% and specificity of 97.0% for diagnosing AAA in patients suspected of having rAAA (moderate certainty).",
+        "context": "Point-of-care ultrasound for the presence of AAA (reference: intraoperative or CTA). PoCUS cannot detect rupture itself; CTA is used for that (sens 91.4%, spec 93.6%).",
+        "notes": "Excellent bedside rule-in/rule-out for the aneurysm; a positive scan in an unstable patient prompts urgent vascular transfer. Verify before teaching use."
+      }
+    },
+    {
+      "id": "bal-galactomannan",
+      "diagnosis": "Invasive pulmonary aspergillosis",
+      "testName": "BAL fluid galactomannan",
+      "sensitivity": 0.79,
+      "specificity": 0.92,
+      "ci": {
+        "sensLow": 0.72,
+        "sensHigh": 0.84,
+        "specLow": 0.88,
+        "specHigh": 0.94
+      },
+      "condition": "Adults with suspected invasive pulmonary aspergillosis (BAL specimen)",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Li C, et al. Diagnostic value of bronchoalveolar lavage fluid galactomannan assay for invasive pulmonary aspergillosis in adults: a meta-analysis. J Clin Pharm Ther. 2022;47(12):1913-1922 (19 studies).",
+        "pmid": "36324286",
+        "doi": "10.1111/jcpt.13792",
+        "url": "https://doi.org/10.1111/jcpt.13792",
+        "sourceQuote": "The pooled sensitivity, specificity, positive likelihood ratio (PLR), negative likelihood ratio (NLR), and diagnostic odds ratio (DOR) were 0.79 (95% CI: 0.72-0.84), 0.92 (95% CI: 0.88-0.94)",
+        "context": "BAL fluid galactomannan for invasive pulmonary aspergillosis; cutoff-dependent (at ODI 0.5: sens 0.89, spec 0.79). More sensitive than serum galactomannan for pulmonary disease.",
+        "notes": "Specimen choice matters: BAL GM differs from serum GM (also in this dataset). Verify before teaching use."
+      }
     }
   ],
   "sequences": [
