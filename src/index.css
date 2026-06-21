@@ -330,9 +330,15 @@ a {
 /* ---------- Visualizations ---------- */
 .viz-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: 1fr; /* phones: single column */
   gap: 16px;
   margin-bottom: 18px;
+}
+/* Desktop / tablet: a balanced 2×2 grid (no stranded single chart). */
+@media (min-width: 640px) {
+  .viz-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .viz {
   background: var(--surface);
