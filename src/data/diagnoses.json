@@ -159,6 +159,66 @@
         "context": "Emergency-department suspected ACS, AMI prevalence ~11%; the 0h/1h SERIAL hs-cTn algorithm, not a single draw. The 63% / 96% after each CI are I-squared heterogeneity, not part of the interval.",
         "notes": "Very high sensitivity → excellent rule-out; the algorithm also rules in. Verify before teaching use."
       }
+    },
+    {
+      "id": "strep-radt",
+      "diagnosis": "Streptococcal pharyngitis",
+      "testName": "Rapid antigen detection test (RADT)",
+      "sensitivity": 0.856,
+      "specificity": 0.954,
+      "ci": { "sensLow": 0.833, "sensHigh": 0.876, "specLow": 0.945, "specHigh": 0.962 },
+      "condition": "Children with pharyngitis (vs throat culture)",
+      "typicalPretest": 0.3,
+      "verified": false,
+      "citation": {
+        "reference": "Cohen JF, et al. Rapid antigen detection test for group A streptococcus in children with pharyngitis. Cochrane Database Syst Rev. 2016;7:CD010502 (105 evaluations, 58,244 participants).",
+        "doi": "10.1002/14651858.CD010502.pub2",
+        "pmid": "27374000",
+        "url": "https://doi.org/10.1002/14651858.CD010502.pub2",
+        "sourceQuote": "RADT had a summary sensitivity of 85.6%; 95% confidence interval (CI) 83.3 to 87.6 and a summary specificity of 95.4%; 95% CI 94.5 to 96.2.",
+        "context": "Children with pharyngitis, RADT vs throat culture; median GAS prevalence ~29.5%. Sensitivity is heterogeneous across studies.",
+        "notes": "High specificity (rule-in); imperfect sensitivity means a negative RADT may warrant culture in children. Verify before teaching use."
+      }
+    },
+    {
+      "id": "celiac-ttg",
+      "diagnosis": "Celiac disease",
+      "testName": "Anti-tissue transglutaminase IgA (tTG-IgA)",
+      "sensitivity": 0.907,
+      "specificity": 0.874,
+      "ci": { "sensLow": 0.873, "sensHigh": 0.932, "specLow": 0.844, "specHigh": 0.9 },
+      "condition": "Adults, secondary care (vs duodenal biopsy)",
+      "typicalPretest": 0.1,
+      "verified": false,
+      "citation": {
+        "reference": "Sheppard AL, et al. Systematic review with meta-analysis: the accuracy of serological tests to support the diagnosis of coeliac disease. Aliment Pharmacol Ther. 2022;55(5):514-527.",
+        "doi": "10.1111/apt.16729",
+        "pmid": "35043426",
+        "url": "https://doi.org/10.1111/apt.16729",
+        "sourceQuote": "Summary sensitivity and specificity of immunoglobulin A (IgA) anti-tissue transglutaminase were 90.7% (95% confidence interval: 87.3%, 93.2%) and 87.4% (84.4%, 90.0%) in adults (5 studies).",
+        "context": "Adults in secondary care vs duodenal biopsy; values differ in children (sens ~97.7%, spec ~70.2%). Requires adequate gluten intake and total-IgA sufficiency.",
+        "notes": "Adult values shown; pediatric characteristics differ. Verify before teaching use."
+      }
+    },
+    {
+      "id": "ra-anticcp",
+      "diagnosis": "Rheumatoid arthritis",
+      "testName": "Anti-CCP (anti-cyclic citrullinated peptide-2)",
+      "sensitivity": 0.719,
+      "specificity": 0.96,
+      "ci": { "sensLow": 0.699, "sensHigh": 0.739, "specLow": 0.953, "specHigh": 0.966 },
+      "condition": "Known or suspected rheumatoid arthritis",
+      "typicalPretest": 0.2,
+      "verified": false,
+      "citation": {
+        "reference": "Zhang WC, Wu H, Chen WX. Meta-analysis: diagnostic accuracy of anti-CCP-2 and anti-CCP-3 antibody in rheumatoid arthritis. Clin Chem Lab Med. 2014;52(6):779-790 (17 studies).",
+        "doi": "10.1515/cclm-2013-0798",
+        "pmid": "24445240",
+        "url": "https://doi.org/10.1515/cclm-2013-0798",
+        "sourceQuote": "For anti-CCP-2, the values were 0.719 (95% CI, 0.699-0.739), 0.960 (95% CI, 0.953-0.966), 17.485 (95% CI, 11.960-25.562)...",
+        "context": "Anti-CCP-2 assay for known/suspected RA. High specificity, moderate sensitivity.",
+        "notes": "Classic rule-in test (high specificity); a negative result does not exclude RA. Verify before teaching use."
+      }
     }
   ],
   "sequences": [
